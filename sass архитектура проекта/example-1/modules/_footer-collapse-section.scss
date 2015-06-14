@@ -1,0 +1,95 @@
+.footer_collapseSection {
+    background: white;
+    transition: background 100ms linear;
+    transition-delay: 0.3s;
+    overflow: hidden;
+
+    &.is-active {
+        background: #30868c;
+        transition-delay: 0s;
+
+        .toggleBtn_icon {
+            @extend .icon-minus-square;
+        }
+
+        .collapseSection_header_title,
+        .collapseSection_header_title a {
+            color: white;
+            transition-delay: 0s;
+        }
+
+        .topCities,
+        .topCities a {
+            color: white;
+            transition-delay: 0s;
+        }
+
+        .collapseSection_content {
+            border-bottom: solid 1px #52999f;
+        }
+    }
+
+    .collapseSection_header_title,
+    .collapseSection_header_title a {
+        color: #3e3e3e;
+        transition: color 100ms linear;
+        transition-delay: 0.3s;
+        text-decoration: none;
+    }
+
+    .collapseSection_content,
+    .collapseSection_header {
+        padding: 0px em(34px) em(14px) em(34px);
+    }
+
+    .collapseSection_header {
+        padding-top: em(18px);
+        margin-bottom: em(7px);
+    }
+
+    .collapseSection_header_title {
+        font-size: em(29px);
+    }
+
+    .toggleBtn_icon {
+        @include font-icon;
+        @extend .icon-plus-square;
+        font-size: em(34px, 29px);
+        margin-left: em(-8px, 34px);
+        margin-right: em(-3px, 34px);
+        position: relative;
+        top: em(2px, 34px);
+    }
+
+    .topCities {
+        li {
+            @include inline-box(calc-percent(283px, $base-width));
+            max-width: 160px;
+            font-size: em(15px);
+            color: #3e3e3e;
+            margin-right: 30px;
+            margin-bottom: em(11px, 15px);
+            transition: color 100ms linear;
+            transition-delay: 0.3s;
+
+            a {
+                color: #3e3e3e;
+                transition: color 100ms linear;
+                transition-delay: 0.3s;
+            }
+        }
+    }
+}
+
+@include breakpoint(desktop) {
+    .footer_collapseSection {
+        .collapseSection_content,
+        .collapseSection_header {
+            padding: 0px em(64px) em(14px) em(64px);
+        }
+
+        .collapseSection_header {
+            padding-top: em(18px);
+        }
+    }
+}

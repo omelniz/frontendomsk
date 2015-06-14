@@ -1,0 +1,49 @@
+#footer {
+	padding: rem(60px) rem(25px);
+}
+
+.footer-nav,
+.footer-logo {
+	display: none;
+}
+
+.footer-address {
+	line-height: ratio(22px);
+	color: #AAAAAA;
+}
+
+@include respond-to(mobile-hd) {
+	#footer {
+		@include clearfix;
+	}
+
+	.footer-nav,
+	.footer-logo {
+		display: block;
+	}
+
+	.footer-logo {
+		@include column('3/12');
+		@include offset('1/12');
+	}
+
+	.footer-nav {
+	    @include column('5/12');
+	}
+
+	.footer-nav-list {
+	    @include column('3/5');
+
+	    &:first-child {
+	        @include column('2/5');
+	    }
+	}
+
+	.footer-nav-item {
+		margin-bottom: rem(5px);
+	}
+
+	.footer-address {
+		@include column('3/12');
+	}
+}

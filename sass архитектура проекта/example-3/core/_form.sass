@@ -1,0 +1,148 @@
+.ps-form__header
+	margin-bottom: em(61px)
+
+	&.m-center-align
+		text-align: center
+
+.ps-form__title
+	font-size: em(30px)
+
+	color: #FFF
+
+	+font-pt-sans-bold
+
+	text-transform: uppercase
+
+.ps-form__content
+	+inline-column-container
+
+.ps-form__column
+	+inline-column(100%)
+
+	&.m-half
+		width: 46.22%
+
+.ps-form__group
+	transition: background .3s ease
+
+	position: relative
+
+	&:hover
+		&::before
+			content: ""
+
+			position: absolute
+			height: 100%
+			width: 100%
+
+			padding: 20px 24px 14px 24px
+
+			margin-top: -10px
+			margin-left: -24px
+
+			background: #fff
+
+			opacity: .15
+
+.ps-form-row
+	margin-bottom: 29px
+
+	position: relative
+
+	&.ps-form-row-multicolumn
+		font-size: 0px
+		+inline-column-container
+
+	&.m-center-align
+		text-align: center
+
+.ps-form-cell
+	$font-size: $font-size-regular
+
+	font-size: $font-size
+	+inline-column(100%)
+
+	&.ps-form-cell-half
+		width: 46.9%
+
+	&.ps-form-cell-without-label
+		padding-top: em(23px, $font-size)
+
+	.ps-form-row:last-child
+		margin-bottom: 0px
+
+
+.ps-form-row-with-photo
+	overflow: hidden
+
+	.ps-form-cell
+		overflow: hidden
+
+		width: auto
+
+		display: block
+
+		&.ps-form-cell-photo
+			float: left
+
+			margin-right: 20px
+
+.ps-label
+	$font-size: $font-size-regular
+
+	+font-pt-sans-bold
+
+	font-size: em($font-size)
+
+	margin-bottom: em(4px, $font-size)
+	margin-left: em(14px, $font-size)
+
+	display: block
+
+	.limit
+		display: none
+
+.ps-form__footer
+	&.m-center-align
+		text-align: center
+
+	&.m-right-align
+		text-align: right
+
+.popup.m-form
+	.ps-form
+		+center-block(em(1060px))
+
+	.ps-label
+		color: #FFF
+
+	.ps-textarea
+		color: #FFF
+
+		+placeholder-color(#b7e2d5)
+
+		border-color: #fff
+
+	.ps-form-submit
+		color: $color-primary
+
+		background: #FFF
+
+.has-error
+	border-color: $color-error !important
+	color: $color-error !important
+
+.parsley-errors-list
+	color: $color-error !important
+
+	font-size: 16px
+
+	+font-pt-sans-bold
+
+	li
+		margin-top: 5px
+		margin-left: 14px
+
+.field-signup-subscription
+	.parsley-errors-list
+		display: none !important

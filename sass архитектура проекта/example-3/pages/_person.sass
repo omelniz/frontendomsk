@@ -1,0 +1,81 @@
+.page.m-person
+    padding-top: em(33px)
+
+    .page__content,
+    .page__header
+        margin-left: em(47px)
+        margin-right: em(15px)
+
+    .page__header
+        margin-bottom: em(27px)
+        overflow: hidden
+
+    .page__title
+        +font-direct-regular
+        $font-size: 16px
+        font-size: em($font-size)
+        line-height: em(30px, $font-size)
+
+        color: $color-primary
+        text-transform: uppercase
+        white-space: nowrap
+
+        width: em(140px, $font-size)
+
+        float: left
+
+    .personNav
+        overflow: hidden
+
+        margin-left: em(180px)
+
+    .personNav__list
+        +font-direct-regular
+        text-align: center
+        line-height: em(30px)
+
+        float: right
+
+    .personNav__item
+        $font-size: 16px
+
+        font-size: em($font-size)
+
+        float: left
+
+        color: #dbdbdb
+
+        +square(em(30px, $font-size))
+
+        &.active
+            background: $color-primary
+
+            color: #fff
+
+    .personNav__link
+        color: $color-primary
+
+    .card.party
+        margin-bottom: em(40px)
+
+        width: em(220px)
+
+    +breakpoint(1440px - 40px)
+        .card.party,
+        .card.placeholder
+            width: grid-span(1, 5)
+
+    +breakpoint(1024px - 24px)
+        .card.party,
+        .card.placeholder
+            width: grid-span(1, 4)
+
+    +breakpoint(960px - 40px)
+        .card.party,
+        .card.placeholder
+            width: grid-span(1, 3)
+
+    +breakpoint(640px - 20px)
+        .card.party,
+        .card.placeholder
+            width: grid-span(1, 2)

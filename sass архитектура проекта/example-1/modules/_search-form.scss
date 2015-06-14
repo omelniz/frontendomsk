@@ -1,0 +1,26 @@
+.search {
+    border-radius: 4px;
+    background: white;
+    box-sizing: border-box;
+    padding: em(56px);
+    text-align: left;
+}
+
+.search-form_row {
+    margin-bottom: em(34px);
+
+    label {
+        @include font-opensans-regular;
+        font-size: em(28px);
+        display: block;
+        margin: 0px 0px em(9px, 28px) em(-2px, 28px);
+        cursor: pointer;
+    }
+}
+
+.search-btn {
+    font-size: em(34px);
+    width: 100%;
+    margin-top: em(6px, 34px);
+    padding: em(19px, 34px) em(10px, 34px);
+}

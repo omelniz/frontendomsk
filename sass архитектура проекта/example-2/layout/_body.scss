@@ -1,0 +1,26 @@
+body {
+	background-color: $color-bg-base;
+	color: $color-text-base;
+
+	&.overlay {
+		position: relative;
+		overflow: hidden;
+
+		&::before {
+			content: "";
+			display: block;
+			background-color: rgba(#000, 0);
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			z-index: 1;
+			transition: background-color .6s ease;
+		}
+
+		&.in::before {
+			background-color: rgba(#000, .75);
+		}
+	}
+}

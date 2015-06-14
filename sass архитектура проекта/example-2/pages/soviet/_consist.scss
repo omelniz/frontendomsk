@@ -1,0 +1,16 @@
+.page.page--soviet-consist {
+	.group {
+		@include column("10/12");
+		@include offset("-1/12");
+		margin-bottom: rem(31px);
+	}
+
+	.group-content {
+		@include clearfix;
+	}
+
+	.group-item {
+		@include column("1/2");
+		margin-bottom: rem(29px);
+	}
+}

@@ -1,0 +1,45 @@
+.card.party
+    +inline-column(em(200px))
+
+    overflow: hidden
+
+    .party__photo
+        +square(em(100px))
+
+        margin-left: em(2px)
+
+        background: $color-primary
+
+        overflow: hidden
+
+    .party__photo__img
+        width: 100%
+
+    .party__name
+        +font-scada-regular
+
+        $font-size: 18px
+        font-size: em($font-size)
+        line-height: em(20px, $font-size)
+
+        margin: em(9px, $font-size) 0px em(2px, $font-size) 0px
+
+        a
+            color: #000
+
+            transition: color .3s ease
+
+            &:hover
+                color: $color-service
+
+    .party__activity
+        +font-scada-regular
+
+        $font-size: 18px
+        font-size: em($font-size)
+
+        color: #969696
+
+        +fade-out-line
+
+        margin-right: em(10px, $font-size)

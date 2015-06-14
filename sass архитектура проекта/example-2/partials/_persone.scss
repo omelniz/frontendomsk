@@ -1,0 +1,35 @@
+.persone {
+	.separator {
+		padding-top: rem(10px);
+		margin-bottom: rem(11px);
+	}
+}
+
+.persone-photo {
+	float: left;
+	margin-right: rem(24px);
+	width: rem(69px);
+	height: rem(80px);
+	mask-image: url(../images/persone-mask.svg);
+	mask-size: 100% 100%;
+	mask-repeat: no-repeat;
+}
+
+.persone-photo-image {
+	max-width: 100%;
+}
+
+.persone-details {
+	overflow: hidden;
+	padding-top: rem(21px);
+	font-size: rem(14px);
+	line-height: ratio(22px, 14px);
+}
+
+.persone-department {
+	text-transform: uppercase;
+	font-size: rem(12px);
+	line-height: ratio(22px, 12px);
+	letter-spacing: 1px;
+	@include font-notosans-regular;
+}

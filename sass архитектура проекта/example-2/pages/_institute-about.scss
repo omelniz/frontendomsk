@@ -1,0 +1,25 @@
+.page.page--institute-about {
+	.page-inner {
+		padding-top: rem(64px);
+	}
+
+	.about,
+	.gallery {
+		margin-bottom: rem(62px);
+	}
+
+	.priorities {
+		margin-bottom: rem(75px);
+	}
+
+	#departments {
+		margin-bottom: rem(78px);
+	}
+
+	#departments,
+	#description {
+		max-width: 577px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

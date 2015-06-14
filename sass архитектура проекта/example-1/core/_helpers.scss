@@ -1,0 +1,30 @@
+.clearfix {
+	@include clearfix;
+}
+
+.without-border {
+    border: none !important;
+}
+
+.center-block {
+	@include center-block;
+}
+
+.grid {
+	@include grid;
+}
+
+.grid-cell,
+.placeholder-cell {
+	@include grid-cell;
+}
+
+.hidden-on-mobile {
+	display: none;
+}
+
+@include breakpoint(phablet) {
+    .hidden-on-mobile {
+    	display: block;
+    }
+}

@@ -1,0 +1,80 @@
+.gallery
+    margin-bottom: em(27px)
+
+    overflow: hidden
+
+    figcaption,
+    .image__author
+        font-size: em(15px)
+        font-weight: normal
+
+    .image__author
+        float: right
+
+    .fotorama__nav-wrap
+        position: relative
+        top: -40px
+
+    .fotorama__arr
+        width: auto
+
+        background: none
+
+        +font-icon
+
+        color: #FFF
+
+        font-size: 51px
+
+        opacity: .7
+
+        &:hover
+            opacity: 1
+
+        &.fotorama__arr--disabled
+            opacity: .25
+
+    .fotorama__wrap--no-controls .fotorama__arr
+        opacity: 0 !important
+
+    .fotorama__arr--prev
+        left: 20px
+
+        &::before
+            content: "\e608"
+
+    .fotorama__arr--next
+        right: 20px
+
+        &::before
+            content: "\e610"
+
+    .fotorama__nav__frame
+        text-align: center
+
+        height: auto
+        width: 36px
+
+    .fotorama__active
+        .fotorama__dot
+            background-color: #FFF
+
+
+    .fotorama__dot
+        +square(10px)
+
+        border: solid 2px #fff
+
+        top: 0px
+        left: 0px
+
+        border-radius: 50%
+
+        &:hover
+            background-color: #74737a
+
+.gallery__slides
+    height: 490px
+    overflow: hidden
+
+    margin-bottom: 20px

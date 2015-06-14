@@ -1,0 +1,51 @@
+.input-text {
+	position: relative;
+	border-bottom: 1px solid #AAAAAA;
+	box-sizing: border-box;
+
+	input {
+		@include reset-text-input;
+		@include font-notoserif-regular;
+		font-style: italic;
+		font-size: rem(16px);
+		width: 100%;
+		color: #000;
+		line-height: 20px;
+		display: block;
+		padding-left: rem(10px);
+	}
+
+	&::after,
+	&::before {
+		content: "";
+		display: block;
+		border-left: 1px solid #AAAAAA;
+		height: rem(6px);
+		position: absolute;
+		bottom: 0px;
+	}
+
+	&::after {
+		left: 0px;
+	}
+
+	&::before {
+		right: 0px;
+	}
+}
+
+.input-text--invert {
+	border-color: #fff;
+	border-color: rgba(#fff, .5);
+
+	&::after,
+	&::before {
+		border-color: #fff;
+		border-color: rgba(#fff, .5);
+	}
+
+	input {
+		color: #FFF;
+		@include placeholder-color(rgba(#fff, .5), #fff);
+	}
+}

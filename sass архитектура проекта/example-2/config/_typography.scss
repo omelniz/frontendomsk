@@ -1,0 +1,32 @@
+$base-font-size: 16px;
+
+$text-setting: (
+    base: ( // p
+        font-size: $base-font-size,
+        line-height: 28px
+    ),
+    mega: ( // h1
+        font-size: 34px,
+        line-height: 46px
+    ),
+    kilo: ( // h2
+        font-size: 21px,
+        line-height: 26px
+    ),
+    hecto: ( // h3
+        font-size: 16px,
+        line-height: 22px
+    ),
+    deca: ( // h4
+        font-size: 14px,
+        line-height: 22px
+    ),
+    deci: ( // h5
+        font-size: 16px,
+        line-height: 22px
+    ),
+    centi: ( // h6
+        font-size: 16px,
+        line-height: 22px
+    )
+);

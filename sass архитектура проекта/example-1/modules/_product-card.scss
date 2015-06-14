@@ -1,0 +1,44 @@
+.product.card {
+    width: 100%;
+
+    .product_photo {
+        margin-bottom: em(11px);
+
+        img {
+            width: 100%;
+            border-radius: 4px;
+        }
+    }
+
+    .product_name,
+    .product_price {
+        @include font-opensans-semibold;
+        font-size: em(24px);
+        @include inline-box;
+        color: #555555;
+    }
+
+    .product_name {
+        margin-left: em(5px, 24px);
+
+        a {
+            color: #555555;
+        }
+    }
+
+    .product_florist {
+        color: #999;
+        font-size: em(21px);
+        @include font-opensans-semibold;
+        display: none;
+    }
+
+    .product_info_link {
+        display: none;
+    }
+
+    .product_price {
+        float: right;
+        margin-right: em(7px, 24px);
+    }
+}

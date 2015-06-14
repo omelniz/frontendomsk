@@ -1,0 +1,103 @@
+.page.m-play-video
+	.page__content
+		+center-block(800px)
+
+		padding: em(40px) em(25px)
+
+		overflow: hidden
+
+	.video.m-show
+		float: left
+
+		max-width: em(600px)
+
+	.page__aside
+		float: right
+
+	.video__header
+		margin-bottom: em(40px)
+
+	.video__header,
+	.video__player
+		max-width: 600px
+
+	.video__metadata
+		overflow: hidden
+
+		margin-top: em(40px)
+		margin-bottom: em(43px)
+
+		display: table
+
+		width: 100%
+
+	.metadata__item
+		display: table-cell
+
+		text-align: center
+
+		vertical-align: bottom
+
+		&:last-child
+			text-align: right
+
+		&:first-child
+			text-align: left
+
+	.metrics
+		font-size: 16px
+
+		.icon-heart
+			font-size: 18px
+
+		.icon-eye
+			font-size: 23px
+
+		.a-like
+			font-size: 16px
+
+	.metrics__item
+		margin-left: 10px
+
+	.video__time
+		color: $color-primary
+
+		font-size: em(30px)
+
+		float: left
+
+	.video__player
+		padding-top: 67%
+
+		position: relative
+
+		margin-bottom: em(50px)
+
+		iframe
+			position: absolute
+			top: 0
+			left: 0
+
+			width: 100%
+			height: 100%
+
+	.video__desc
+		line-height: em(27px)
+
+		margin-bottom: em(46px)
+
+		p
+			margin-bottom: em(10px)
+
+	.video__type,
+	.video__title
+		font-size: em(50px)
+		line-height: em(55px, 50px)
+
+		display: inline
+
+	.video__type
+		color: $color-primary
+
+	.relatedMedia__item
+		width: 50% 

@@ -1,0 +1,38 @@
+// Core
+@import "core/core";
+
+// Layout
+@import "layout/all";
+@import "layout/header";
+@import "layout/footer";
+
+// Forms
+@import "forms/text-control";
+@import "forms/select-control";
+
+// Modules
+@import "modules/breadcrumbs";
+@import "modules/filters";
+@import "modules/top-shops";
+@import "modules/pagination";
+@import "modules/collapse-info";
+@import "modules/product-categories";
+@import "modules/product-card";
+@import "modules/search-form";
+@import "modules/breadcrumbs";
+@import "modules/store-head";
+@import "modules/tabs";
+@import "modules/store-deletage";
+@import "modules/store-list";
+@import "modules/subscribe";
+@import "modules/policy-list";
+@import "modules/swither";
+@import "modules/order";
+@import "modules/reviews";
+
+// Pages
+@import "pages/home/home";
+@import "pages/storefront/storefront";
+@import "pages/serp-a/serp";
+@import "pages/serp-b/serp";
+@import "pages/details/details";

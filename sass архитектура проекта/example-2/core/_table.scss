@@ -1,0 +1,32 @@
+.table {
+	font-size: rem(14px);
+	line-height: ratio(22px, 14px);
+	text-align: left;
+	table-layout: fixed;
+	width: 100%;
+
+	thead {
+		@include font-notoserif-bold;
+		border-bottom: solid 1px $color-border;
+		tr {margin-bottom: 20px;}
+	}
+	tbody {
+		@include font-notoserif-regular;
+		tr:first-child {
+			td {
+				padding-top: 10px;
+			}
+		}
+	}
+	th {
+		padding-bottom: 11px;
+	}
+	td {
+		padding-bottom: 33px;
+		padding-right: 10px;
+
+		&:last-child {
+			padding-right: 0px;
+		}
+	}
+}

@@ -1,0 +1,49 @@
+.logo
+    $font-size: 18px
+
+    .logo__wrapper
+        $height: 50px
+
+        padding: 0px em(27px)
+        height: em($height, $font-size)
+        line-height: em(54px, $font-size)
+
+        text-align: center
+
+        display: block
+
+    .logo__title
+        text-transform: uppercase
+        color: #fff
+
+        font-size: em($font-size)
+
+        .icon-horn
+            font-size: em(17px, $font-size)
+            margin-right: em(3px, 17px)
+
+            position: relative
+            top: em(1px, 17px)
+
+    .logo-text
+        +font-logo-regular
+        font-weight: normal
+        -webkit-font-smoothing: antialiased
+        -moz-osx-font-smoothing: grayscale
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.004)
+
+        &::after
+            content: "Public Speech"
+
+
+    .logo__link
+        color: #fff
+
+        display: block
+
+        transition: background .3s ease
+
+        &:hover
+            background: $color-primary-lighter
+
+            color: #fff

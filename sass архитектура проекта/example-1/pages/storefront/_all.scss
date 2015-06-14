@@ -1,0 +1,34 @@
+.page_header {
+    background: #efefef;
+    border: none;
+    padding: 0px;
+}
+
+.main_header_title {
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.pagination {
+    float: right;
+}
+
+.product.card {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+    img {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .product_name {
+        @include font-opensans-regular;
+        color: #333;
+    }
+
+    .product_price {
+        @include font-opensans-semibold;
+        color: #35A0A4;
+    }
+}

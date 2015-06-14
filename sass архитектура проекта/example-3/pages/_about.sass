@@ -1,0 +1,78 @@
+#about
+    .helpUs
+        background: #000
+
+        overflow: hidden
+
+        padding: em(18px) em(25px) em(23px) em(25px)
+
+        margin-bottom: em(38px)
+
+    .helpUs__title
+        $font-size: $font-size-x-large
+
+        float: left
+
+        width: em(120px, $font-size)
+
+        +font-pt-sans-bold
+        font-size: em($font-size)
+        line-height: em(30px, $font-size)
+
+        color: #FFF
+
+        margin-right: em(16px, $font-size)
+
+    .helpUs__content
+        overflow: hidden
+
+        padding-top: 1px
+
+        p
+            $font-size: 19px
+
+            +font-pt-sans
+            font-size: em($font-size)
+            line-height: em(27px, $font-size)
+
+            color: #FFF
+
+            margin-bottom: em(10px, $font-size)
+
+        .btn
+            $font-size: 18px
+
+            color: #000
+            background: #FFF
+
+            text-transform: none
+
+            +font-scada-regular
+            font-size: em($font-size)
+
+            padding: em(9px, $font-size)
+            padding-bottom: em(7px, $font-size)
+
+
+    #team
+        padding-top: 19px
+        margin-bottom: 12px
+
+    .team__party
+        @extend %grid-cell
+
+        font-size: 18px
+        line-height: 22px
+
+        width: 200px
+
+        margin-bottom: 11px
+
+        &.placeholder
+            width: em(110px)
+
+            padding: 0px !important
+            margin: 0px !important
+
+        .party__avatar
+            margin-bottom: 9px

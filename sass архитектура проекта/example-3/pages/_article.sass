@@ -1,0 +1,48 @@
+.page.m-article
+    @extend .article-base
+
+    .page__content
+        max-width: 800px
+
+        margin: 0px 40px
+
+    .page__aside
+        margin-bottom: em(7px)
+        width: 1px
+
+    .page__aside,
+    .page__content
+        +inline-box
+
+        text-align: left
+
+
+    .page__wrapper
+        margin-bottom: em(56px)
+
+        text-align: center
+
+        position: relative
+
+    .metrics__item
+        button,
+        a
+            transition:  color .3s ease
+
+    +breakpoint(1280px - 40px)
+        .floating__sharing__title
+            display: none
+
+        .social-likes__widget
+            display: block
+
+            margin: 0px
+            margin-bottom: 20px
+
+            text-align: left
+
+            &:last-child
+                margin-bottom: 0px
+
+        .social-likes__counter
+            display: block

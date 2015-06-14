@@ -1,0 +1,129 @@
+#header {
+    border-bottom: solid 1px #ababab;
+    padding: em(21px) em(15px);
+    @include font-opensans-light;
+    color: #333333;
+
+    .logo {
+        float: left;
+        width: em(260px);
+
+        .logo_image {
+            max-width: 100%;
+
+            &.mobile-logo {
+                margin-top: em(3px);
+                margin-left: em(6px);
+            }
+
+            &.web-logo {
+                display: none;
+            }
+        }
+    }
+
+    .contacts,
+    .userbar {
+        font-size: em(26px);
+        float: right;
+    }
+
+    .contacts {
+        margin-top: em(18px, 26px);
+        margin-right: em(35px, 26px);
+
+        a {
+            color: #333333;
+        }
+    }
+}
+
+.enterOnSite {
+    button {
+        @include font-opensans-light;
+        font-size: em(25px, 26px);
+        text-transform: uppercase;
+        border: solid 1px #343434;
+        border-radius: 4px;
+        width: em(181px, 25px);
+        height: em(66px, 25px);
+        box-sizing: border-box;
+
+        &:hover {
+            color: #FFF;
+            background: #343434;
+        }
+    }
+}
+
+.enterOnSite_option {
+    @include inline-box;
+
+    &.sign-up-button {
+        display: none;
+    }
+}
+
+// Breakpoints
+@include breakpoint(phablet) {
+    #header {
+        padding: em(27px) em(34px);
+
+        .logo {
+            .logo_image {
+                &.mobile-logo {
+                    display: none;
+                }
+
+                &.web-logo {
+                    display: block;
+                }
+            }
+        }
+
+        .contacts,
+        .userbar {
+            font-size: em(18px);
+            float: right;
+        }
+
+        .contacts {
+            margin-top: em(12px, 18px);
+            margin-right: em(13px, 18px);
+        }
+    }
+
+    .enterOnSite_option {
+        button {
+            border-radius: 30px;
+            width: em(142px, 18px);
+            height: em(43px, 18px);
+        }
+
+        &.sign-up-button {
+            margin-right: em(-7px, 18px);
+        }
+    }
+}
+
+@include breakpoint(phablet) {
+    #header {
+        .logo {
+            width: em(350px);
+        }
+    }
+}
+
+@include breakpoint(tablet) {
+    .enterOnSite_option {
+        &.sign-up-button {
+            display: inline-block !important;
+        }
+    }
+}
+
+@include breakpoint(desktop) {
+    #header {
+        padding: em(27px) em(64px);
+    }
+}

@@ -1,0 +1,30 @@
+h1 {
+	@include text-settings-for(mega);
+	@include font-playfair-bold;
+}
+
+h2 {
+	@include text-settings-for(kilo);
+	@include font-playfair-bold;
+}
+
+h3 {
+	@include text-settings-for(hecto);
+	@include font-notoserif-bold;
+}
+
+h4 {
+	@include text-settings-for(deca);
+	@include font-notoserif-regular;
+	color: #111111;
+}
+
+h5 {
+	@include text-settings-for(deci);
+	@include font-notoserif-regular;
+}
+
+h6 {
+	@include text-settings-for(centi);
+	@include font-notoserif-regular;
+}

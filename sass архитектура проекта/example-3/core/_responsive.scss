@@ -1,0 +1,17 @@
+@mixin breakpoint($point) {
+	@media (max-width: $point) {
+		@content;
+	}
+}
+
+@function ww($point) {
+	@if $point == maxwidth {
+		@return 2400px;
+	} @else if $point == laptop {
+		@return 1200px;
+	} @else if $point == tablet-landscape {
+		@return 1050px;
+	} @else if $point == tablet-portrait {
+		@return 900px;
+	}
+}

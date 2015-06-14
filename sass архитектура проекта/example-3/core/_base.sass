@@ -1,0 +1,39 @@
+html,
+body,
+#wrapper
+    height: 100%
+
+body > #wrapper
+    height: auto
+    min-height: 100%
+
+#layout
+    padding-bottom: em(126px + 50px)
+    +clearfix
+
+body
+    +font-base-regular
+    font-size: $font-size-base
+    -webkit-appearance: none
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+    min-width: 1000px
+
+    &.m-disable
+        overflow: hidden
+input,
+button,
+textarea
+    -webkit-appearance: none
+    -webkit-font-smoothing: antialiased
+
+a
+    text-decoration: none
+
+    transition: color .3s ease
+
+    color: $color-primary
+
+    &:hover
+        color: $color-service

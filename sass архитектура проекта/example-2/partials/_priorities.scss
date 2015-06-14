@@ -1,0 +1,56 @@
+.priorities {
+	background-color: $color-accent;
+	background-color: rgba($color-accent, .5);
+	padding: rem(64px) calc-percent(100px);
+}
+
+.priorities-list {
+	li {
+		padding-left: em(48px);
+        position: relative;
+        margin-bottom: rem(22px);
+	}
+}
+
+.priorities-icon {
+	text-align: center;
+    position: absolute;
+    top: rem(6px);
+    left: 0px;
+    width: rem(32px);
+
+    &.icon--femto {
+    	top: rem(-5px);
+    }
+
+    &.icon--book,
+    &.icon--systems {
+    	top: rem(5px);
+    }
+
+    &.icon--bio {
+    	top: rem(7px);
+    }
+
+    &.icon--pharma,
+    &.icon--hazard {
+    	top: rem(8px);
+    }
+}
+
+.priorities-column {
+	font-size: rem(14px);
+	line-height:  ratio(22px, 14px);
+	@include inline-box(calc-percent(423px, 980px));
+	margin-right: calc-percent(76px, 980px);
+
+	&.column--last {
+		margin-right: 0px;
+	}
+}
+
+.priorities-title {
+	text-align: center;
+	@include text-settings-for(mega);
+	margin-bottom: rem(45px);
+}

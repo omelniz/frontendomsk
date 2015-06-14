@@ -1,0 +1,6 @@
+@include breakpoint(desktop-hd) {
+	.product.card,
+    .placeholder-cell {
+        width: calc-percent(203px, 860px);
+    }
+}

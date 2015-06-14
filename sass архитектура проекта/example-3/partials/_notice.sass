@@ -1,0 +1,54 @@
+.notice
+	display: none
+
+	$notice-bg: $color-service
+
+	width: em(213px)
+	padding: em(13px) em(28px) em(9px) em(28px)
+
+	box-sizing: border-box
+
+	background: $notice-bg
+
+	&::after,
+	&::before
+		position: absolute
+		top: 100%
+
+	&::before
+		content: ""
+		left: 0px
+
+		width: 0px
+		height: 0px
+
+		border-style: solid
+		border-width: em(13px) em(105px) 0 0
+		border-color: $notice-bg transparent transparent transparent
+
+	&::after
+		content: ""
+
+		right: 0px
+
+		width: 0px
+		height: 0px
+
+		border-style: solid
+		border-width: 0 em(105px) em(13px) 0
+		border-color: transparent $notice-bg transparent transparent
+
+.notice__text
+	$color: #FCFDFD
+
+	+font-direct-regular
+
+	text-align: center
+
+	color: $color
+
+	text-transform: uppercase
+	font-size: em($font-size-small)
+
+	a
+		color: $color

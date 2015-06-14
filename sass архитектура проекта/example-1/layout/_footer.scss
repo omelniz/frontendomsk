@@ -1,0 +1,67 @@
+@import "../modules/footer-nav";
+@import "../modules/footer-collapse-section";
+
+#footer {
+    display: none;
+    background: #30868c;
+
+    .subscribe {
+        margin-top: em(-6px);
+        margin-bottom: em(30px);
+    }
+
+    .footer_content {
+        padding: em(18px) em(34px) 0px em(34px);
+    }
+
+    .footer_column {
+        @include inline-box;
+        border-right: solid 1px #52999f;
+        padding-bottom: em(12px);
+        padding-top: em(16px);
+        padding-right: em(80px);
+        margin-right: em(34px);
+
+        &:last-child {
+            border-right: none;
+            padding-right: 0px;
+            margin-right: 0px;
+        }
+    }
+
+    .socialLinks_item {
+        @include inline-box;
+        color: white;
+        font-size: em(16px);
+        margin-right: em(26px, 16px);
+    }
+
+    .socialLinks_link {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.copyright {
+    text-align: center;
+    font-size: em(16px);
+    color: #cccccc;
+    background: #222222;
+    padding: em(13px, 16px) 0px;
+    position: relative;
+    z-index: 1;
+}
+
+@include breakpoint(tablet) {
+    #footer {
+        display: block;
+    }
+}
+
+@include breakpoint(desktop) {
+    #footer {
+        .footer_content {
+            padding: em(18px) em(64px) 0px em(64px);
+        }
+    }
+}

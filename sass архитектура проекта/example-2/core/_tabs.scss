@@ -1,0 +1,50 @@
+.tabs-nav {
+	border-bottom: solid 1px #DDDDDD;
+	padding-left: rem(18px);
+
+	li {
+		display: inline-block;
+		vertical-align: top;
+		color: #111111;
+		margin: 0px rem(15px);
+		padding: 18px 5px 19px 5px;
+
+		&.active {
+			font-weight: 700;
+			position: relative;
+
+			&::before {
+				content: "";
+				display: block;
+				border-bottom: solid 7px #DDDDDD;
+				position: absolute;
+				top: 100%;
+				left: 0px;
+				right: 0px;
+			}
+		}
+	}
+
+	a {
+		border-bottom: none;
+	}
+}
+
+.tabs-content {
+    .tab-pane {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+
+        &.fade {
+            opacity: 0;
+            transition: opacity .3s ease;
+
+            &.in {
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.filter {
+    margin-bottom: em(30px);
+}
+
+.filter_header {
+    @include font-opensans-semibold;
+    font-size: em(17px);
+    margin-bottom: em(10px, 17px);
+    position: relative;
+    color: #555555;
+}
+
+.filter_header_title {
+    a {
+        color: #555555;
+        display: block;
+        position: relative;
+        text-decoration: none;
+
+        &::before {
+            @include font-icon;
+            font-size: em(29px, 17px);
+            color: #cecece;
+            position: absolute;
+            top: em(-3px, 29px);
+            right: em(-12px, 29px);
+            content: "\e001";
+        }
+
+        &.collapsed::before {
+            content: "\e00d";
+        }
+    }
+}
+
+.filter_option {
+    font-size: em(15px);
+    line-height: em(23px, 15px);
+    color: #41858c;
+    padding-left: em(3px, 15px);
+    margin-bottom: em(8px, 15px);
+
+    a {
+        color: #41858c;
+        display: block;
+    }
+}

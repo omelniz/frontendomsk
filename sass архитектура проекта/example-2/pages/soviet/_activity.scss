@@ -1,0 +1,25 @@
+.page.page--soviet-activity {
+	#content {
+		@include offset("-3/12");
+		@include column("6/12");
+	}
+
+	.activity {
+		margin-bottom: rem(54px);
+	}
+
+	.activity-date {
+		margin-bottom: rem(2px);
+		display: block;
+	}
+
+	.activity-title {
+		margin-bottom: rem(11px);
+	}
+
+	.activity-content {
+		h3 {
+			margin-bottom: 0px;
+		}
+	}
+}

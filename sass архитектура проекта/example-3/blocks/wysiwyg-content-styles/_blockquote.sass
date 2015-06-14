@@ -1,0 +1,31 @@
+blockquote
+	$font-size: $font-size-x-large
+
+	color: $color-primary
+
+	+font-pt-sans-narrow
+	font-size: em($font-size)
+	line-height: em(36px, $font-size)
+
+	text-align: center
+
+	position: relative
+
+	padding-top: em(70px, $font-size)
+	padding-bottom: em(10px, $font-size)
+
+	margin-bottom: em(27px, $font-size)
+	margin-top: em(10px, $font-size)
+
+	&::before
+		content: "’’"
+
+		position: absolute
+		top: 10px
+		left: 50%
+
+		font-size: em($font-size-xxxx-large, $font-size)
+
+		line-height: em(100px, $font-size-xxxx-large)
+
+		+translateX(-50%)

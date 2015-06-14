@@ -1,0 +1,91 @@
+@import "../plugins/selectize";
+
+$selectize-font-size: 27px;
+$selectize-line-height: 37px;
+$selectize-shadow-input: none;
+$selectize-shadow-input-focus: none;
+$selectize-color-border: #999999;
+$selectize-padding-x: 13px;
+$selectize-padding-item-x: 11px;
+$selectize-padding-dropdown-item-x: $selectize-padding-x;
+$selectize-arrow-size: 12px;
+$selectize-arrow-color: #333333;
+$selectize-arrow-offset: 15px;
+
+.select-control {
+    &.single .selectize-input {
+        &::after {
+            right: em($selectize-arrow-offset, $selectize-font-size);
+            margin-top: em(round(-$selectize-arrow-size / 2), $selectize-font-size);
+            border-width: em($selectize-arrow-size, $selectize-font-size) em($selectize-arrow-size, $selectize-font-size) 0 em($selectize-arrow-size, $selectize-font-size);
+            border-color: $selectize-arrow-color transparent transparent transparent;
+        }
+
+        &.dropdown-active::after {
+            margin-top: em($selectize-arrow-size * -0.8, $selectize-font-size);
+            border-width: 0 em($selectize-arrow-size, $selectize-font-size) em($selectize-arrow-size, $selectize-font-size) em($selectize-arrow-size, $selectize-font-size);
+            border-color: transparent transparent $selectize-arrow-color transparent;
+        }
+    }
+
+    .selectize-dropdown,
+    .selectize-input {
+        font-size: em($selectize-font-size);
+        line-height: em($selectize-line-height, $selectize-font-size);
+    }
+
+    .selectize-input input {
+        font-size: em($selectize-font-size, $selectize-font-size);
+        line-height: em($selectize-line-height, $selectize-font-size);
+    }
+
+    .selectize-input {
+        padding: em($selectize-padding-y, $selectize-font-size) em($selectize-padding-x, $selectize-font-size);
+        @include selectize-box-shadow($selectize-shadow-input);
+        border-color: #fff;
+        &.focus {
+            @include selectize-box-shadow($selectize-shadow-input-focus);
+        }
+    }
+
+    .selectize-dropdown {
+        border-color: $selectize-color-border;
+    }
+
+    @include breakpoint(phablet) {
+        $selectize-phablet-font-size: 18px;
+        $selectize-phablet-line-height: 25px;
+        $selectize-phablet-padding-y: 5px;
+        $selectize-phablet-padding-x: 9px;
+        $selectize-phablet-arrow-size: 8px;
+
+        &.single .selectize-input {
+            &::after {
+                right: em($selectize-arrow-offset, $selectize-phablet-font-size);
+                margin-top: em(round(-$selectize-phablet-arrow-size / 2), $selectize-phablet-font-size);
+                border-width: em($selectize-phablet-arrow-size, $selectize-phablet-font-size) em($selectize-phablet-arrow-size, $selectize-phablet-font-size) 0 em($selectize-phablet-arrow-size, $selectize-phablet-font-size);
+            }
+
+            &.dropdown-active::after {
+                margin-top: em($selectize-phablet-arrow-size * -0.8, $selectize-phablet-font-size);
+                border-width: 0 em($selectize-phablet-arrow-size, $selectize-phablet-font-size) em($selectize-phablet-arrow-size, $selectize-phablet-font-size) em($selectize-phablet-arrow-size, $selectize-phablet-font-size);
+            }
+        }
+
+        .selectize-dropdown,
+        .selectize-input {
+            font-size: em($selectize-phablet-font-size);
+            line-height: em($selectize-phablet-line-height, $selectize-phablet-font-size);
+        }
+
+        .selectize-input input {
+            font-size: em($selectize-phablet-font-size, $selectize-phablet-font-size);
+            line-height: em($selectize-phablet-line-height, $selectize-phablet-font-size);
+        }
+
+        .selectize-input {
+            padding: em($selectize-phablet-padding-y, $selectize-phablet-font-size) em($selectize-phablet-padding-x, $selectize-phablet-font-size);
+            border-color: $selectize-color-border;
+        }
+    }
+}

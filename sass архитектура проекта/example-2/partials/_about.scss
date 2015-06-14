@@ -1,0 +1,32 @@
+.about {
+	@include clearfix;
+}
+
+.about-title {
+	margin-bottom: rem(44px);
+}
+
+.about-aside {
+	@include column("2/12");
+	@include offset("-1/12");
+}
+
+.about-semenov-photo {
+	text-align: center;
+	margin-bottom: rem(136px);
+	max-width: rem(154px);
+}
+
+.about-content {
+	@include column("8/12");
+	@include clearfix;
+	padding-top: rem(19px);
+}
+
+.about-column {
+	@include column("4/8");
+
+	p {
+		margin-bottom: rem(22px);
+	}
+}

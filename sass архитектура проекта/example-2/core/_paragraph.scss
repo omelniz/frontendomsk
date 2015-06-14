@@ -1,0 +1,12 @@
+p {
+	line-height: ratio(22px);
+
+	small {
+		font-size: em(11px, 14px);
+	}
+
+	&.tizer {
+		font-size: rem(21px);
+		line-height: ratio(32px, 21px);
+	}
+}

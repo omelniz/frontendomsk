@@ -1,0 +1,47 @@
+#content {
+    margin-bottom: 50px;
+}
+
+.topShops {
+    width: calc-percent(720px, 750px);
+    margin: 0 auto;
+}
+
+.intro {
+    margin-bottom: em(47px);
+}
+
+.intro_content {
+    padding-top: em(50px);
+    padding-bottom: em(146px);
+    text-align: center;
+}
+
+.intro_title {
+    font-size: em(55px);
+    margin-bottom: em(5px, 55px);
+}
+
+.intro_subtitle {
+    font-size: em(31px);
+    margin-bottom: em(65px, 31px);
+}
+
+.search {
+    width: calc-percent(715px, 750px);
+    display: inline-block;
+}
+
+.page_section {
+    margin-bottom: em(51px);
+}
+
+.page_section_header {
+    padding: 0px em(30px);
+    margin-bottom: em(54px);
+
+    h2 {
+        font-size: em(65px);
+        line-height: em(77px, 65px);
+    }
+}

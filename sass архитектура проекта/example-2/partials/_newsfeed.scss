@@ -1,0 +1,44 @@
+.newsfeed {
+	.news {
+		margin-bottom: rem(45px);
+
+		&.news--main {
+			margin-bottom: rem(52px);
+
+			.news-time {
+				margin-bottom: rem(4px);
+			}
+
+			.news-title {
+				font-size: rem(34px);
+				line-height: ratio(52px, 34px);
+				margin-bottom: rem(3px);
+			}
+
+			.news-announce {
+				font-size: rem(21px);
+				line-height: ratio(32px, 21px);
+			}
+		}
+	}
+
+	.news-time {
+		margin-bottom: rem(2px);
+		display: block;
+	}
+
+	.news-title {
+		font-size: rem(21px);
+		line-height: ratio(30px, 21px);
+		margin-bottom: rem(7px);
+	}
+
+	.news-announce {
+		font-size: rem(16px);
+		line-height: ratio(22px, 16px);
+	}
+
+	.pagination {
+		margin-top: 70px;
+	}
+}

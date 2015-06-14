@@ -1,0 +1,24 @@
+#header {
+	position: relative;
+
+	.searchBtn,
+	.menuBtn {
+		position: absolute;
+		bottom: rem(11px);
+		@include reset-btn;
+	}
+
+	.searchBtn {
+		right: 0px;
+	}
+
+	.menuBtn {
+		left: 0px;
+	}
+}
+
+@include respond-to(desktop) {
+	#header {
+		padding-top: rem(45px);
+	}
+}

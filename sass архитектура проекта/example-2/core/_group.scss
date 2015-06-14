@@ -1,0 +1,44 @@
+.group-header {
+	border-top: solid 1px $color-underline;
+	padding-top: rem(7px);
+	margin-bottom: rem(17px);
+}
+
+.group-title {
+	text-transform: uppercase;
+	@include font-notosans-regular;
+	font-size: rem(12px);
+	color: $color-underline;
+	line-height: ratio(20px, 12px);
+}
+
+.group-content {
+	@include clearfix;
+}
+
+.group--persone {
+	margin-bottom: rem(65px);
+
+	.persone-photo {
+		margin-left: rem(6px);
+	}
+}
+
+.group--files {
+	.group-header {
+		margin-bottom: rem(15px);
+	}
+
+	.group-item {
+		@include column("1/2");
+		margin-bottom: rem(20px);
+	}
+
+	.file {
+		font-size: rem(14px);
+
+		.file-extension {
+			font-size: em(11px, 14px);
+		}
+	}
+}

@@ -1,0 +1,63 @@
+.pagination {
+    li {
+        @include inline-box;
+        @include font-opensans-regular;
+        font-size: em(24px);
+        line-height: em(51px, 24px);
+        box-sizing: border-box;
+        width: em(56px, 24px);
+        height: em(52px, 24px);
+        background: #f2f2f2;
+        border: 1px solid #c5c4c2;
+        border-radius: 4px;
+        text-align: center;
+        margin-right: em(1px, 24px);
+
+        a {
+            color: #b8b6b6;
+            display: block;
+            text-decoration: none;
+        }
+
+        &:hover {
+            background: #b8b6b6;
+
+            a {
+                color: #f2f2f2;
+            }
+        }
+
+        &.active {
+            background: #469fa6;
+            border-color: #31959d;
+            color: white;
+        }
+
+        &.next {
+            width: auto;
+
+            a {
+                padding: 0px em(18px, 24px);
+            }
+        }
+    }
+}
+
+// Breakpoints
+@include breakpoint(phablet) {
+    .pagination {
+        li {
+            font-size: em(16px);
+            line-height: em(34px, 16px);
+            width: em(37px, 16px);
+            height: em(35px, 16px);
+            margin-right: em(-2px, 16px);
+
+            &.next {
+                a {
+                    padding: 0px em(18px, 16px);
+                }
+            }
+        }
+    }
+}

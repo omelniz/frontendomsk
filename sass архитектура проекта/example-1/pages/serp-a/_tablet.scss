@@ -1,0 +1,13 @@
+@include breakpoint(tablet) {
+    #aside {
+        display: block;
+    }
+
+    #main {
+        margin-left: em(270px);
+    }
+
+    .pagination {
+    	float: right;
+    }
+}

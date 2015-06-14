@@ -1,0 +1,52 @@
+.m-grid
+    @extend %grid
+
+    .card
+        @extend %grid-cell
+
+        &.placeholder
+            width: em(300px)
+
+            padding: 0px !important
+            margin: 0px !important
+
+    +breakpoint(1440px - 40px)
+        .card.article,
+        .card.event,
+        .card.video,
+        .card.placeholder
+            width: grid-span(1, 4)
+
+            &.m-doubleSize
+                width: grid-span(2, 4)
+
+    +breakpoint(1280px - 40px)
+        .card.article,
+        .card.event,
+        .card.video,
+        .card.placeholder
+            width: grid-span(1, 3)
+
+            &.m-doubleSize
+                width: grid-span(2, 3)
+
+    +breakpoint(1024px - 40px)
+        .card.article,
+        .card.event,
+        .card.video,
+        .card.placeholder
+            width: grid-span(1, 2)
+
+            &.m-doubleSize
+                width: grid-span(2, 2)
+
+    +breakpoint(640px - 40px)
+        .card.article,
+        .card.event,
+        .card.video,
+        .card.placeholder
+            width: grid-span(1, 1)
+
+            &.m-doubleSize
+                width: grid-span(1, 1)
+

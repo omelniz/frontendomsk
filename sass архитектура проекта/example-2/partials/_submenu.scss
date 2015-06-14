@@ -1,0 +1,36 @@
+.submenu {
+    text-align: center;
+    border-bottom: solid 1px #F1F1F1;
+}
+
+.submenu-list {
+    display: inline-block;
+}
+
+.submenu-list-item {
+    display: inline-block;
+    font-size: rem(16px);
+    line-height: ratio(22px, 16px);
+    @include font-notoserif-regular;
+    padding: 6px 20px 8px 20px;
+
+    &.is-active {
+        border: solid 2px $color-accent;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+
+        a {
+            border: none;
+            cursor: default;
+        }
+    }
+}
+
+@include respond-to(desktop) {
+    .submenu {
+        padding-top: rem(36px);
+        padding-bottom: rem(35px);
+    }
+}

@@ -1,0 +1,29 @@
+@function get-breakpoint($breakpoint-name) {
+    @return map-get($breakpoints, $breakpoint-name);
+}
+
+// Here we define that by default our users are not using an old browser
+// The use of !default allow us to override this variable before this point
+$old-ie: false !default;
+
+
+// This is where the magic happens
+// Our media-query mixin takes one argument, which is the media-query type
+@mixin respond-to($breakpoint-name) {
+
+    // If $old-ie is false, carry on...
+    @if $old-ie == false {
+        @media screen and (min-width: get-breakpoint($breakpoint-name)) {
+            @content;
+        }
+    }
+
+    // Now, if $mq-ie ($mq-ie is defined in oldie.scss) is the same as what we passed
+    // Then go ahead and use that block of code.
+    // On all.scss we defined $mq-ie as equals to 'desk', so basically what this is doing is
+    // Checking for every include of the media-query mixin that uses 'desk' as the argument
+    // And using this code as default
+    @else if $mq-ie == $breakpoint-name {
+        @content;
+    }
+}

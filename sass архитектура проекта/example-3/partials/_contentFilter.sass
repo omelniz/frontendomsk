@@ -1,0 +1,32 @@
+.contentFilter__list
+	+inline-column-container
+
+	.filter
+		+inline-column
+		+font-direct-regular
+
+		text-align: center
+		text-transform: uppercase
+
+		font-size: em(16px)
+
+		width: 31%
+
+		color: $color-primary
+
+		transition: color .3s ease
+
+		&:last-child
+			text-align: right
+
+		&:first-child
+			text-align: left
+
+		&.m-no-active,
+		&.m-no-active .filter__link
+			color: #A3D7C5
+
+	.filter__link
+		+inline-column
+
+		transition: color .3s ease

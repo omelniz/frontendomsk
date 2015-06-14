@@ -1,0 +1,16 @@
+#page-details {
+	padding: 0px em(15px);
+
+	@import "all";
+	@import "mobile";
+	@import "phablet";
+	@import "tablet";
+
+	@include breakpoint(phablet) {
+		padding: em(48px) em(34px) em(0px) em(34px);
+	}
+
+	@include breakpoint(desktop) {
+		padding: em(48px) em(64px) em(0px) em(64px);
+	}
+}

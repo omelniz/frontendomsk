@@ -1,0 +1,161 @@
+.commentsFeed__header
+    background: $color-primary
+    background: rgba($color-primary, .9)
+
+    margin-bottom: em(30px)
+
+    bottom: auto !important
+
+    height: 50px
+    line-height: 50px
+
+    z-index: 1
+
+    .scroll-to
+        float: right
+
+        color: #FFF
+
+        font-size: 14px
+
+        margin-top: 5px
+
+.commentsFeed__header__content
+    overflow: hidden
+
+.commentsFeed__header__content,
+.commentsFeed__content,
+.commentsFeed__footer
+    padding: 0px 30px
+
+    +center-block(800px)
+
+.commentsFeed__header__title
+    font-size: em(30px)
+
+    color: #FFF
+
+.comment
+    margin-left: em(38px)
+    margin-bottom: em(22px)
+
+    max-width: 600px
+
+    text-align: left
+
+    box-sizing: border-box
+
+    +font-scada-regular
+
+    border-bottom: solid 1px #d2d2d2
+
+    padding-bottom: em(23px)
+
+    &:last-child
+        border-bottom: none
+        margin-bottom: 0px
+
+    .author
+        position: relative
+
+        display: inline
+
+    .author__avatar
+        position: absolute
+        top: 6px
+        left: -38px
+
+        +square(32px)
+
+        overflow: hidden
+
+        background: $color-primary
+
+        img
+            max-width: 100%
+
+
+    .author__name
+        display: inline
+
+        font-size: em(16px)
+
+        text-transform: uppercase
+
+        color: $color-primary
+
+    .replyForm
+        padding-top: 20px
+
+.comment__message
+    display: inline
+
+    font-size: em(16px)
+
+.comment__metadata
+    color: #969696
+
+    font-size: em(16px)
+
+    a
+        color: #969696
+
+    .a-comment-reply
+        opacity: 0
+
+        transition: opacity 150ms ease
+
+        cursor: pointer
+
+.comment__body
+    &:hover
+        .a-comment-reply
+            opacity: 1
+
+.comment__answers
+
+    .commen
+        border-bottom: none
+
+        padding-bottom: 0px
+
+        margin-top: em(20px)
+        margin-bottom: 0px
+
+.commentsFeed
+
+    .replyForm
+        max-width: 600px
+
+        margin-left: em(38px)
+
+        +font-scada-regular
+
+        .ps-label
+            +font-scada-regular
+
+            text-transform: uppercase
+
+            font-size: em(16px)
+
+            margin-left: em(-1px, 16px)
+
+        .author
+            position: relative
+
+        .author__avatar
+            position: absolute
+            top: 2px
+            left: -38px
+
+            +square(32px)
+
+            overflow: hidden
+
+            background: $color-primary
+
+            img
+                max-width: 100%
+
+        .ps-form__footer
+            margin-top: -47px

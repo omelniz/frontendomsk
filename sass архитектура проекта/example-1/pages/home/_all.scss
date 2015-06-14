@@ -1,0 +1,37 @@
+.intro {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    overflow: hidden;
+}
+
+.intro_content {
+    box-sizing: border-box;
+}
+
+.intro_title,
+.intro_subtitle {
+    color: white;
+    position: relative;
+    @include photoshop-text-shadow(90, 0px, 6%, 103px, rgba(black, 0.77));
+}
+
+.intro_title {
+    @include font-opensans-light;
+}
+
+.intro_subtitle {
+    @include font-opensans-semibold;
+}
+
+.search {
+    @include photoshop-drop-shadow(-90, em(159px), 0, em(106px), rgba(black, 0.68));
+}
+
+.page_section_header {
+    h2 {
+        @include font-opensans-light;
+        color: #666666;
+        text-align: center;
+    }
+}

@@ -1,0 +1,119 @@
+.page.m-profile-persone
+
+    .page__content
+        margin: em(50px)
+
+        text-align: center
+
+        position: relative
+
+    .profile__info
+        margin-bottom: em(35px)
+
+    .profile__name
+        $font-size: $font-size-xx-large
+
+        +font-direct-regular
+
+        font-size: em($font-size)
+
+        color: $color-primary
+
+        margin-bottom: em(15px, $font-size)
+
+    .profile__desc
+        +font-direct-regular
+
+        display: inline-block
+        vertical-align: top
+
+        font-size: em(16px)
+        line-height: em(23px, 16px)
+
+        margin-left: em(30px, 16px)
+        margin-right: em(30px, 16px)
+
+        text-align: left
+
+        color: #999
+
+        max-width: em(430px, 16px)
+
+    .socialLinks
+        margin-bottom: em(22px)
+
+    .socialLinks__item
+        +inline-box
+
+        font-size: 22px
+
+    .icon-facebook
+        color: #3c7ec3
+
+    .icon-twitter
+        color: #2CCEF3
+
+    .icon-vkontakte
+        color: #5693B4
+
+    .icon-youtube
+        color: #BC1009
+
+    .icon-rss
+        color: #D14500
+
+    .profile__photo
+        display: inline-block
+        vertical-align: top
+
+        background: $color-primary
+        border-radius: 50%
+
+        overflow: hidden
+
+        margin-bottom: em(30px)
+
+        img
+            border-radius: 50%
+
+            width: em(160px)
+            height: em(160px)
+
+            display: block
+
+            border: solid 4px $color-primary
+
+            box-sizing: border-box
+
+    .profile__site
+        text-align: center
+
+        color: $color-service
+
+        +font-direct-regular
+        font-size: em(24px)
+
+        margin-bottom: em(19px, 24px)
+
+        a, i
+            color: $color-service
+            vertical-align: middle
+
+    .a-open-profileSettingsBtn
+        +reset-btn
+
+        color: #e5e5e5
+
+        font-size: em(32px)
+
+        cursor: pointer
+
+        position: absolute
+        top: em(3px, 32px)
+        left: 50%
+        margin-left: em(100px, 32px)
+
+        transition: color .3s ease
+
+        &:hover
+            color: $color-service

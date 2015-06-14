@@ -1,0 +1,183 @@
+.page.m-events
+    padding-top: em(40px)
+
+    .page__header
+        overflow: hidden
+
+        margin-bottom: em(34px)
+
+        text-align: center
+
+    .page__title,
+    .events__switcher
+        +font-direct-regular
+
+        text-transform: uppercase
+
+        font-size: 16px
+
+        color: $color-primary
+
+    .events__switcher__item,
+    .events__switcher_separator
+        +inline-box
+
+    .events__switcher__item
+        margin: 0px 14px
+        letter-spacing: 1px
+
+        opacity: .6
+
+        transition: opacity .3s ease
+
+        color: $color-primary
+
+        &.active
+            opacity: 1
+
+            a
+                cursor: default
+
+                color: $color-primary
+
+        &:hover
+            opacity: 1
+
+    .page__content
+        margin-left: em(30px)
+        margin-right: em(30px)
+
+    .personPreview,
+    .organizersPreview,
+    .placesPreview
+        +inline-column(32%)
+
+        margin-bottom: em(35px)
+
+    .card.party
+        width: 49%
+
+        box-sizing: border-box
+
+        padding-right: em(10px)
+
+    .card.event
+        margin-bottom: em(29px)
+
+        padding-left: 76px
+
+        position: relative
+
+    .event__date
+        position: absolute
+        top: 12px
+        left: 0
+        width: 62px
+
+    .event__date__number
+        background: $color-primary
+
+        display: block
+
+        color: #FFF
+
+        font-size: 50px
+
+        text-align: center
+
+        padding: 7px 0px 3px 0px
+
+    .event__date__month
+        display: block
+        padding: 6px 0px 5px 0px
+
+        border: solid 2px $color-primary
+
+        text-align: center
+
+        color: $color-primary
+
+        text-transform: uppercase
+
+        font-size: 18px
+
+        margin-bottom: 14px
+
+    .event__date__time
+        color: $color-primary
+
+        font-size: 18px
+
+        display: block
+
+        text-align: center
+
+    .column__header
+        margin-bottom: em(34px)
+
+    .column__title
+        +font-direct-regular
+
+        font-size: em(16px)
+        text-transform: uppercase
+
+    .events__group__header
+        margin-bottom: 12px
+
+    .events__group__title
+        +font-direct-regular
+
+        text-transform: uppercase
+
+        font-size: 16px
+
+        color: $color-primary
+
+        transition: color .3s ease
+
+    .card
+        &.event,
+        &.placeholder
+            +breakpoint(1440px - 40px)
+                width: grid-span(1, 3)
+
+            +breakpoint(1280px - 40px)
+                width: grid-span(1, 3)
+
+            +breakpoint(1024px - 40px)
+                width: grid-span(1, 2)
+
+            +breakpoint(640px - 40px)
+                width: grid-span(1, 1)
+
+    .events__empty
+        $font-size: 16px
+        color: $color-primary
+
+        +font-direct-regular
+
+        font-size: em($font-size)
+        line-height: em(22px, $font-size)
+
+        +center-block(430px)
+
+        margin-bottom: em(68px, $font-size)
+
+        p
+            margin-bottom: em(22px, $font-size)
+
+        a
+            color: $color-primary
+            text-decoration: none
+
+    &.m-last-events
+        .event__date
+            +grayscale
+
+            opacity: .8
+
+        .events__group__title,
+        .page__title,
+        .event__type,
+        .event__location .icon-location
+            color: #c0c0c0

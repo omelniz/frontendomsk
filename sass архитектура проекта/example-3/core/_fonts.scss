@@ -1,0 +1,62 @@
+$font-path: "/fonts/";
+
+@include import-font('PsIcons',         $font-path + 'icons/ps-icons');
+@include import-font('LogoFont',        $font-path + 'logo/logo');
+@include import-font('RublFontRegular', $font-path + 'rubl/alsrubl-arial-regular');
+@include import-font('PTSansBold',      $font-path + 'pt-sans/bold/pt-sans-bold');
+@include import-font('PTSansItalic',    $font-path + 'pt-sans/italic/pt-sans-italic');
+@include import-font('PTSans',          $font-path + 'pt-sans/regular/pt-sans-regular');
+@include import-font('PTSansNarrow',    $font-path + 'pt-sans/narrow/pt-sans-narrow');
+@include import-font('ScadaRegular',    $font-path + 'scada/regular/scada-regular');
+@include import-font('DirectRegular',   $font-path + 'direct/regular/direct-regular');
+
+@mixin font-icon {
+    font-family: 'PsIcons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin font-pt-sans {
+    font-family: "PTSans", Arial, sans-serif;
+}
+
+@mixin font-pt-sans-bold {
+    font-family: "PTSansBold", Arial, sans-serif;
+}
+
+@mixin font-pt-sans-narrow {
+    font-family: "PTSansNarrow", "PTSans", Arial, sans-serif;
+}
+
+@mixin font-pt-sans-italic {
+    font-family: "PTSansItalic", "PTSans", Arial, sans-serif;
+}
+
+@mixin font-logo-regular {
+    font-family: "LogoFont", Arial, sans-serif;
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin font-base-regular {
+    font-family: Arial, sans-serif;
+}
+
+@mixin font-rubl-regular {
+    font-family: "RublFontRegular", Arial, sans-serif;
+}
+
+@mixin font-scada-regular {
+    font-family: "ScadaRegular", Arial, sans-serif;
+}
+
+@mixin font-direct-regular {
+    font-family: "DirectRegular", Arial, sans-serif;
+} 

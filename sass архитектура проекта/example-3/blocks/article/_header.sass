@@ -1,0 +1,99 @@
+.article__header
+    background: #FFF
+
+    +center-block(800px)
+
+    padding-top: em(30px)
+
+    margin-top: em(20px)
+    margin-bottom: em(58px)
+
+    text-align: center
+
+    position: relative
+    z-index: 1
+
+    .article__type
+        $font-size: $font-size-x-large
+
+        +font-pt-sans-italic
+
+        color: $color-service
+
+        font-size: em($font-size)
+
+        margin-bottom: em(25px, $font-size)
+
+    .article__title
+        $font-size: 55px
+
+        font-size: em($font-size)
+
+        +font-pt-sans-bold
+
+        margin-bottom: em(36px, $font-size)
+
+        padding-left: em(30px, $font-size)
+        padding-right: em(30px, $font-size)
+
+    .article__metadata
+        display: table
+
+        width: 100%
+
+        .metadata__item
+            display: table-cell
+
+            font-size: em(16px)
+
+            vertical-align: middle
+
+            width: 33%
+
+            &:first-child
+                text-align: left
+
+            &:last-child
+                text-align: right
+
+    .metrics
+        text-align: center
+
+        border: solid 1px $color-primary
+        display: inline-block
+
+        padding: 4px 12px 3px 12px
+
+        font-size: 16px
+
+        .icon-heart
+            font-size: 18px
+
+        .icon-eye
+            font-size: 23px
+
+        .a-like
+            font-size: 16px
+
+    .metrics__item
+        margin-left: 7px
+
+        &:first-child
+            margin-left: 0px
+
+    .author__photo,
+    .author__name
+        display: inline-block
+        vertical-align: middle
+
+    .author__photo
+        margin-right: 4px
+
+        +square(32px)
+
+        overflow: hidden
+
+        background: $color-accent
+
+    .author__photo__img
+        max-width: 100%

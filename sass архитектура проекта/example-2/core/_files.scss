@@ -1,0 +1,67 @@
+.file {
+	font-size: rem(16px);
+	line-height: ratio(22px, 16px);
+
+	small {
+		@include font-notosans-regular;
+	}
+}
+
+.file-title {
+	margin-right: rem(4px);
+}
+
+.file-size {
+	white-space: nowrap;
+}
+
+.file-extension {
+	border-radius: 2px;
+	text-transform: uppercase;
+	color: #FFF;
+	@include font-notosans-regular;
+	font-size: em(11px, 16px);
+	padding: 0px 3px 1px 3px;
+
+	&.pdf {
+		background-color: #BF4D28;
+
+		&::before {
+			content: ".pdf";
+		}
+	}
+
+	&.jpg {
+		background-color: #88C425;
+
+		&::before {
+			content: ".jpg";
+		}
+	}
+
+	&.doc {
+		background-color: #03A9F4;
+
+		&::before {
+			content: ".doc";
+		}
+	}
+
+	&.ppt {
+		background-color: #F07818;
+
+		&::before {
+			content: ".ppt";
+		}
+	}
+}
+
+.fileslist {
+	.file {
+		margin-bottom: rem(11px);
+	}
+
+	.btn {
+		margin-top: rem(18px);
+	}
+}

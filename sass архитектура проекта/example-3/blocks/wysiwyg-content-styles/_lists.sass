@@ -1,0 +1,46 @@
+ul, ol
+    margin-bottom: em(27px)
+
+    li
+        position: relative
+
+        line-height: em(27px)
+
+        margin-bottom: em(10px)
+
+ul
+    li
+        &::after
+            content: ""
+            display: inline-block
+
+            border-top: solid 2px #DDDDDD
+            width: em(22px)
+
+            position: absolute
+            top: em(10px)
+            right: 100%
+
+            margin-right: em(12px)
+
+ol
+    counter-reset: list
+
+    li
+        &::after
+            counter-increment: list
+            content: counter(list)
+
+            display: inline-block
+
+            padding: em(1px) em(9px)
+
+            border: solid 2px #DDDDDD
+            border-radius: 50%
+
+            position: absolute
+            top: -2px
+            right: 100%
+
+            margin-right: em(12px)
+            +font-pt-sans-bold

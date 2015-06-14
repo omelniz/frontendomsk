@@ -1,0 +1,40 @@
+@function em($target, $context: $base-font-size) {
+    @if $target == 0 {
+        @return 0
+    }
+    @return $target / $context + 0em;
+}
+
+@function rem($target, $context: $base-font-size) {
+    @if $target == 0 {
+        @return 0
+    }
+    @return $target / $context + 0rem;
+}
+
+@function ratio($target, $context: $base-font-size) {
+	@if $target == 0 {
+        @return 0
+    }
+    @return $target / $context;
+}
+
+@mixin add-custom-font($fontName, $pathToFont, $fileName) {
+    @font-face {
+        font-family: $fontName;
+        src: url($pathToFont + $fileName + ".eot");
+        src: url($pathToFont + $fileName + ".eot" + '?#iefix') format('embedded-opentype'),
+        url($pathToFont + $fileName + ".ttf") format('truetype'),
+        url($pathToFont + $fileName + ".woff") format('woff'),
+        url($pathToFont + $fileName + ".svg") format('svg');
+  }
+}
+
+@mixin text-settings-for($size) {
+    $size-settings: map-get($text-setting, $size);
+    $font-size: map-get($size-settings, "font-size");
+    $line-height: map-get($size-settings, "line-height");
+
+    font-size: rem($font-size);
+    line-height: ratio($line-height, $font-size);
+}

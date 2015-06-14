@@ -1,0 +1,185 @@
+// Попап
+.popup
+	display: none
+
+	background-color: $color-primary
+
+	&.m-popup-fullscreen
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+
+		width: 100%
+		z-index: 200
+
+		overflow: auto
+
+	&.fade
+		opacity: 0
+
+		transition: opacity .3s ease
+
+		&.in
+			opacity: 1
+
+.popup__title
+	font-size: em(30px)
+
+	color: #FFF
+
+	+font-pt-sans-bold
+
+	text-transform: uppercase
+
+	text-align: center
+
+	margin-bottom: 50px
+
+.a-popupCloseBtn
+	+reset-btn
+
+	color: #FFF
+
+	font-size: em(80px)
+
+	+font-pt-sans
+
+	position: fixed
+	top: em(20px, 80px)
+	right: em(20px, 80px)
+
+	line-height: em(44px, 80px)
+
+	opacity: .5
+
+	transition: opacity .3s ease
+
+	&:hover
+		opacity: 1
+
+.popup__content
+	padding-top: em(66px)
+	padding-bottom: em(51px)
+
+	&.m-centering
+		+center-block
+
+	&.m-text
+		p
+			color: #FFF
+
+			+font-pt-sans-bold
+
+			font-size: em(25px)
+			line-height: em(30px, 25px)
+
+			a
+				color: #FFF
+
+.popup__footer
+	&.m-center-align
+		text-align: center
+
+// Удачная регистрация
+#registration-success-popup
+	.popup__content
+		max-width: em(555px)
+
+// Заглушки для статьи и события
+#newEvent,
+#newArticle
+	.icon-grumpy
+		position: absolute
+		right: 100%
+		top: 100px
+
+		color: #FFF
+
+		font-size: em(100px)
+
+#newArticle
+	.icon-grumpy
+		top: 80px
+
+.popup__placeholder
+	+center-block(380px)
+
+	padding: 0px 30px
+
+	position: relative
+
+	p
+		color: #FFF
+
+		+font-pt-sans-bold
+
+		font-size: em(18px)
+		line-height: em(22px, 18px)
+
+		a
+			color: #FFF
+
+	.a-send-email
+		+font-pt-sans
+
+.popup__placeholder__title
+	font-size: em(30px)
+
+	color: #FFF
+
+	+font-pt-sans-bold
+
+	text-transform: uppercase
+
+	margin-bottom: 50px
+
+// Восстановление пароля
+#resetPassword-newpassword,
+#resetPassword-request,
+	.popup__content
+		max-width: em(490px)
+
+#resetPassword-request-success
+	.popup__content
+		max-width: em(500px)
+
+// Кроп
+#cropImage
+	padding-bottom: em(51px)
+
+	.popup__content
+		+center-block(580px)
+		margin-bottom: 20px
+
+	.ps-form__group
+		padding-top: 10px
+
+	.cropImage__origin
+		border: solid 2px #fff
+
+	.cropImage__origin__img
+		width: 100%
+
+	.cropImage__preview
+		margin-bottom: 38px
+
+	.cropImage__preview__img
+		+inline-box
+		vertical-align: middle
+
+		overflow: hidden
+
+		border: solid 2px #fff
+
+		&.m-size-160
+			+square(160px)
+		&.m-size-100
+			+square(100px)
+		&.m-size-64
+			+square(64px)
+		&.m-size-32
+			+square(32px)
+		&.m-size-16
+			+square(16px)

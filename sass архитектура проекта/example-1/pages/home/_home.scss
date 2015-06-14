@@ -1,0 +1,11 @@
+#page-home {
+	@import "all";
+	@import "mobile";
+
+	@include breakpoint(phablet) {
+		@import "phablet";
+	}
+	@include breakpoint(tablet) {
+		@import "tablet";
+	}
+}

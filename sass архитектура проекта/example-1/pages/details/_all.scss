@@ -1,0 +1,102 @@
+.page_header {
+    border: none;
+    text-align: center;
+
+    .product_name {
+        color: #666;
+    }
+}
+
+.details_photo {
+    img {
+        width: 100%;
+    }
+}
+
+.product_tabs {
+    border: 1px solid #efefef;
+
+    .tab-pane {
+        box-sizing: border-box;
+    }
+}
+
+.product.card {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+    img {
+        width: 100%;
+    }
+
+    .product_name {
+        @include font-opensans-regular;
+        color: #333;
+    }
+
+    .product_price {
+        @include font-opensans-semibold;
+        color: #35A0A4;
+    }
+}
+
+.details_info {
+    .store {
+        background: #f5f5f5;
+        overflow: hidden;
+    }
+
+    .owner_photo {
+        float: left;
+
+        img {
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+
+    .store_info {
+        @include font-opensans-regular;
+        overflow: hidden;
+    }
+
+    .store_name {
+        color: #666666;
+    }
+
+    .store_florist {
+        color: #8e8e8e;
+    }
+
+    .store_rating {
+        @include font-opensans-semibold;
+
+        img {
+            @include inline-box;
+            vertical-align: middle;
+        }
+
+        .rating_reviews {
+            @include inline-box;
+            vertical-align: middle;
+            color: #666666;
+        }
+    }
+
+    .store_link {
+        @include font-opensans-semibold;
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        color: #a6a6a6;
+        border: 1px solid #a6a6a6;
+        box-sizing: border-box;
+        overflow: hidden;
+        text-decoration: none;
+
+        &:hover {
+            color: #FFF;
+            background: #a6a6a6;
+        }
+    }
+}

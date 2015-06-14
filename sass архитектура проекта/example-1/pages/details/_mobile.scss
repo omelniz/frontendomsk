@@ -1,0 +1,108 @@
+.page_header {
+    margin-bottom: em(25px);
+    padding-top: em(30px);
+    padding-bottom: 0px;
+
+    .product_name {
+        font-size: em(39px);
+    }
+}
+
+.details_photo {
+    margin-bottom: em(20px);
+}
+
+.product_tabs {
+    margin-bottom: em(40px);
+
+    .tab-pane {
+        padding: em(32px) em(23px) 0px em(23px);
+    }
+}
+
+.product-grid {
+    -webkit-column-count: 2;
+    -webkit-column-gap: em(13px);
+}
+
+.product.card {
+    border-radius: 3px;
+    padding: em(9px) em(9px) em(13px);
+    margin-bottom: em(12px);
+
+    img {
+        border-radius: 0px;
+    }
+
+    .product_name {
+        font-size: em(18px);
+    }
+
+    .product_price {
+        font-size: em(21px);
+        margin-right: 0px;
+    }
+}
+
+.order {
+    margin-bottom: em(30px);
+}
+
+.product_info_title {
+    display: none;
+}
+
+.details_info {
+    margin-bottom: em(30px);
+
+    .store {
+        margin: em(14px) 0px em(34px);
+        padding: em(27px) em(33px);
+    }
+
+    .owner_photo {
+        width: em(194px);
+        margin-right: em(24px);
+    }
+
+    .store_info {
+        padding-top: em(18px);
+    }
+
+    .store_name {
+        font-size: em(46px);
+        margin-bottom: em(7px, 46px);
+    }
+
+    .store_florist {
+        font-size: em(26px);
+        margin-bottom: em(10px, 26px);
+    }
+
+    .store_rating {
+        margin-bottom: em(9px);
+
+        img {
+            width: em(120px);
+            margin-right: em(8px);
+        }
+
+        .rating_reviews {
+            font-size: em(15px);
+            margin-top: em(3px, 15px);
+        }
+    }
+
+    .store_link {
+        font-size: em(20px);
+        line-height: em(49px, 20px);
+        width: em(272px, 20px);
+        height: em(49px, 20px);
+        border-radius: 2px;
+        padding: 0px em(5px, 20px);
+    }
+}
+
+.product_desc {
+    display: none;
+}

@@ -1,0 +1,120 @@
+@include breakpoint(phablet) {
+
+.page_header {
+    display: none;
+}
+
+.details_photo {
+    width: calc-percent(340px, 700px);
+    float: left;
+}
+
+.details_info {
+    width: calc-percent(340px, 700px);
+    float: right;
+
+    .store {
+        margin: em(12px) 0px em(30px);
+        padding: em(22px) 0px em(27px) em(18px);
+    }
+
+    .owner_photo {
+        width: em(120px);
+        margin-right: em(14px);
+    }
+
+    .store_info {
+        padding-top: em(11px);
+    }
+
+    .store_name {
+        font-size: em(28px);
+        margin-bottom: em(4px, 28px);
+    }
+
+    .store_florist {
+        font-size: em(16px);
+        margin-bottom: em(7px, 16px);
+    }
+
+    .store_rating {
+        margin-bottom: em(7px);
+
+        img {
+            width: em(68px);
+            margin-right: em(5px);
+        }
+
+        .rating_reviews {
+            font-size: em(9px);
+            margin-top: em(2px, 9px);
+        }
+    }
+
+    .store_link {
+        font-size: em(12px);
+        line-height: em(29px, 12px);
+        width: em(152px, 12px);
+        height: em(29px, 12px);
+        border-radius: 4px;
+        padding: 0px em(3px, 12px);
+    }
+
+    .product_desc {
+        display: block;
+        color: #666;
+        font-size: em(12px);
+
+        h6 {
+            @include font-opensans-semibold;
+            margin-bottom: em(7px, 12px);
+        }
+
+        p {
+            line-height: em(18px, 12px);
+        }
+    }
+}
+
+.product-grid {
+    -webkit-column-count: auto;
+    -webkit-column-gap: normal;
+}
+
+.product_tabs {
+    clear: both;
+    margin-bottom: 0px;
+
+    .product.card {
+        border: none;
+        border-radius: 0px;
+        padding: 0px;
+        margin-bottom: em(34px);
+
+        img {
+            border-radius: 4px;
+        }
+
+        .product_name {
+            font-size: em(16px);
+            @include font-opensans-semibold;
+        }
+
+        .product_price {
+            font-size: em(16px);
+            margin-right: em(5px, 16px);
+            color: #555555;
+        }
+    }
+
+    .product.card,
+    .placeholder-cell {
+        width: calc-percent(276px, 860px);
+    }
+}
+
+.policyList {
+    display: none;
+}
+
+}

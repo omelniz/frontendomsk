@@ -1,0 +1,71 @@
+.ps-social-links
+    .social-link
+        position: relative
+
+
+        padding-right: 0px
+        padding-left: 0px
+
+        transition: padding .3s ease
+
+        margin-bottom: 20px
+
+        &.fill
+            padding-right: 42px
+            padding-left: 50px
+
+            .social-link__icon
+                opacity: 1
+
+            .a-remove-social-link
+                display: block
+
+            .a-remove-social-link,
+            .a-add-social-link
+                opacity: .7
+
+                &:hover
+                    opacity: 1
+
+            &.last
+                .a-add-social-link
+
+
+                    display: block
+
+                .a-remove-social-link
+                    opacity: 0
+
+                    display: none
+
+
+    .a-add-social-link,
+    .a-remove-social-link
+        display: none
+
+        opacity: 0
+
+        transition: opacity .3s ease
+
+        position: absolute
+        top: 13px
+        right: 0
+
+        color: #FFF
+
+        font-size: 22px
+
+        +reset-btn
+
+    .social-link__icon
+        color: #FFF
+
+        position: absolute
+        top: 6px
+        left: 0px
+
+        font-size: 38px
+
+        transition: opacity .3s ease
+
+        opacity: 0

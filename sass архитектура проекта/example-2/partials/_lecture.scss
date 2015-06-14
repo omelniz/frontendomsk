@@ -1,0 +1,54 @@
+// <article class="lecture">
+//     <div class="lecture-details">
+//         <time class="time lecture-time"><?= $lecture["date"] ?> &bull; <?= $lecture["time"] ?></time>
+//         <h4 class="lecture-name"><?= $lecture["name"] ?></h4>
+//         <p class="lecture-teacher">
+//             <?= $lecture["teacher"]["fullname"] ?>,
+//             <?= $lecture["teacher"]["shortpost"] ?>
+//         </p>
+//     </div>
+//     <div class="lecture-location">
+//         <i class="icon icon--location"></i>
+//         <?= $lecture["location"] ?>
+//     </div>
+// </article>
+
+.lectures-list {
+	.lecture {
+		margin-bottom: rem(49px);
+	}
+}
+
+.lecture {
+	@include clearfix;
+}
+
+.lecture-details {
+	@include column("4/6");
+}
+
+.lecture-time {
+	display: block;
+	margin-bottom: rem(11px);
+	letter-spacing: 1px;
+}
+
+.lecture-name {
+	font-size: rem(16px);
+	line-height: ratio(22px, 16px);
+	margin-bottom: rem(14px);
+}
+
+.lecture-teacher {
+	font-size: rem(14px);
+	font-style: italic;
+}
+
+.lecture-location {
+	@include column("2/6");
+	font-size: rem(14px);
+	line-height: ratio(19px, 14px);
+	padding-top: rem(30px);
+	padding-left: rem(21px);
+	box-sizing: border-box;
+}

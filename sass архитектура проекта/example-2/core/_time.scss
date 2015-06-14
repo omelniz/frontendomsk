@@ -1,0 +1,13 @@
+.time {
+	color: #111;
+	font-size: rem(12px);
+	text-transform: uppercase;
+	line-height: ratio(17px, 12px);
+	@include font-notosans-regular;
+	white-space: nowrap;
+}
+
+.time--large {
+	font-size: rem(17px);
+	line-height: ratio(23px, 17px);
+}

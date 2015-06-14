@@ -1,0 +1,78 @@
+.text-ul,
+.text-ol {
+    @include text-settings-for(base);
+    @include font-notoserif-regular;
+
+    li {
+        position: relative;
+
+        font-size: rem(16px);
+        line-height: ratio(22px, 16px);
+
+        margin-bottom: em(22px);
+    }
+}
+
+.text-ul {
+    li {
+        padding-left: em(20px);
+
+        &::after {
+            content: "—";
+            display: inline;
+
+            color: $color-accent;
+
+            position: absolute;
+            top: em(0px);
+            left: 0px;
+        }
+    }
+}
+
+.text-ol {
+    counter-reset: list;
+
+    li {
+        padding-left: 0px;
+        counter-increment: list;
+
+        margin-bottom: em(11px);
+
+        &:last-child {
+            ol {
+                margin-bottom: 0px;
+            }
+        }
+
+        &::after {
+            content: counter(list) ".";
+
+            display: inline-block;
+
+            position: absolute;
+            top: 2px;
+            right: 100%;
+            margin-right: 5px;
+
+            text-align: right;
+
+            font-weight: 700;
+
+            font-size: em(14px, 16px);
+        }
+
+        ol {
+            counter-reset: sublist;
+            margin-bottom: em(44px);
+
+            li {
+                counter-increment: sublist;
+
+                &::after {
+                    content: counter(list) "." counter(sublist) ".";
+                }
+            }
+        }
+    }
+}

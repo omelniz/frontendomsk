@@ -1,0 +1,77 @@
+.ps-datatime
+	box-sizing: border-box
+
+	height: 50px
+
+	border: solid 2px #fff
+
+	padding-left: 16px
+
+	overflow: hidden
+
+	min-width: 225px
+
+	+font-pt-sans
+
+.ps-datatime-data-col,
+.ps-datatime-time-col
+	height: 100%
+
+	line-height: 46px
+
+	display: inline-block
+	vertical-align: top
+
+	position: relative
+
+	.icon-calendar,
+	.icon-time
+		color: #FFF
+
+		font-size: 24px
+
+		margin-right: 6px
+
+		position: relative
+		top: 3px
+
+		cursor: pointer
+
+	.icon-time
+		position: absolute
+		top: 50%
+		right: 10px
+
+		margin-top: -12px
+
+		opacity: 1
+
+		z-index: 1
+
+		transition: opacity .3s ease
+
+.ps-datatime-data-col
+	float: left
+
+.ps-datatime-time-col
+	float: right
+
+.ps-datatime-data-input,
+.ps-datatime-time-input
+	+reset-btn
+
+	font-size: $font-size-regular
+
+	color: #FFF
+
+	+placeholder-color(#90ceb9)
+
+.ps-datatime-data-input
+	width: 92px
+
+.ps-datatime-time-input
+	width: 70px
+
+	opacity: 0
+
+	transition: opacity .3s ease

@@ -1,0 +1,160 @@
+.page.m-profile-organization
+    .organization__cover
+        margin: 0px 25px -82px 25px
+
+    .organization__cover__img
+        padding-top: 40.3%
+
+        background-repeat: no-repeat
+        background-size: cover
+
+        max-height: 517px
+
+    .page__content
+        padding: em(50px) em(25px)
+
+    .organization__header
+        text-align: center
+
+        margin-bottom: em(23px)
+
+        position: relative
+
+    .organization__name
+        $font-size: $font-size-xx-large
+        +font-direct-regular
+
+        font-size: em($font-size)
+
+        color: $color-primary
+
+        margin-bottom: em(10px, $font-size)
+
+    .organization__type
+        +font-direct-regular
+
+        font-size: em(24px)
+
+        color: $color-service
+
+        margin-bottom: em(18px, 24px)
+
+    .profile__address
+        +font-direct-regular
+
+        font-size: em(18px)
+        line-height: em(23px, 18px)
+
+        +center-block(400px)
+
+        color: #999
+
+    .organization__desc
+        +font-direct-regular
+
+        font-size: em(16px)
+        line-height: em(23px, 16px)
+
+        +center-block(400px)
+        margin-bottom: em(46px, 16px)
+
+        color: #999
+
+        .column
+            box-sizing: border-box
+
+            &.first
+                padding-right: em(25px, 16px)
+
+            &.last
+                padding-left: em(25px, 16px)
+
+    .organization__logo
+        display: inline-block
+        vertical-align: top
+
+        margin-bottom: 33px
+
+        +square(160px)
+
+        overflow: hidden
+
+        background: $color-primary
+
+        &.m-no-border
+            img
+                border: none
+
+        img
+            +square(160px)
+
+            border: solid 4px $color-primary
+
+            box-sizing: border-box
+
+    .organization__events__header
+        text-align: center
+
+        color: $color-primary
+
+        font-size: em(24px)
+
+        margin-bottom: em(32px, 24px)
+
+        +font-direct-regular
+
+    .profile__site
+        text-align: center
+
+        color: $color-service
+
+        +font-direct-regular
+        font-size: em(24px)
+
+        margin-bottom: em(19px, 24px)
+
+        a, i
+            color: $color-service
+            vertical-align: middle
+
+    .socialLinks
+        margin-bottom: 38px
+
+    .socialLinks__item
+        +inline-box
+
+        font-size: 22px
+
+    .icon-facebook
+        color: #3c7ec3
+
+    .icon-twitter
+        color: #2CCEF3
+
+    .icon-vkontakte
+        color: #5693B4
+
+    .icon-youtube
+        color: #BC1009
+
+    .icon-rss
+        color: #D14500
+
+    .a-open-profileSettingsBtn
+        +reset-btn
+
+        color: #e5e5e5
+
+        font-size: em(32px)
+
+        cursor: pointer
+
+        position: absolute
+        top: em(124px, 32px)
+        left: 50%
+        margin-left: em(103px, 32px)
+
+        transition: color .3s ease
+
+        &:hover
+            color: $color-service

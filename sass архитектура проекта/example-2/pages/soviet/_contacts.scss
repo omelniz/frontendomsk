@@ -1,0 +1,10 @@
+.page.page--soviet-contacts {
+	.map {
+		margin-bottom: rem(64px);
+	}
+
+	#content {
+		@include column("6/12");
+		@include offset("-3/12");
+	}
+}

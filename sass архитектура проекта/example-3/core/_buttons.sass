@@ -1,0 +1,74 @@
+.btn
+    $font-size: $font-size-small
+    +reset-btn
+
+    background: $color-primary
+
+    font-size: em($font-size)
+
+    text-transform: uppercase
+
+    color: #fff
+
+    +font-direct-regular
+
+    letter-spacing: 1px
+
+    +inline-box
+
+    padding: em(19px, $font-size) em(23px, $font-size)
+
+    transition: all .3s ease
+
+    &.btn-invert
+        background: #FFF
+
+        color: $color-primary
+
+        &:hover
+            color: #fff
+
+            background: $color-service
+
+    &.btn-rounded
+        border-radius: 2px
+
+    &:disabled
+        opacity: .5
+
+    &:hover,
+    &.active
+        background: $color-service
+
+        .btn__icon
+            color: $color-service
+
+.btn-with-icon
+    $font-size: $font-size-small
+
+    padding: em(2px, $font-size)
+    padding-right: em(26px, $font-size)
+
+    height: em(54px, $font-size)
+    line-height: em(56px, $font-size)
+
+    box-sizing: border-box
+
+    .btn__icon
+        background: #FFF
+
+        color: $color-primary
+
+        transition: color .3s ease
+
+        +inline-box
+
+        margin-right: em(20px, $font-size)
+
+        height: 100%
+        width: 50px
+
+        font-size: 16px
+        line-height: 50px
+        text-align: center
+        letter-spacing: 0px

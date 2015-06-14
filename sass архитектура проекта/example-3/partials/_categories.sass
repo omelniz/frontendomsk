@@ -1,0 +1,129 @@
+/* Categories header */
+.toggle-categoriesNav
+    $size: 50px
+    $font-size: $font-size-large
+
+    +reset-btn
+    color: #FFF
+
+    font-size: em($font-size)
+    line-height: em($size, $font-size)
+    text-align: center
+
+    height: em($size, $font-size)
+    width: em($size, $font-size)
+
+    transition: background .3s ease
+
+    &:hover
+        background: $color-primary-lighter
+
+    &.active
+        background: $color-primary-darker
+
+    &.m-disable
+        opacity: .5
+
+        &:hover
+            background: none
+
+            cursor: default
+
+.categoriesNav
+    display: none
+
+    background: $color-primary-darker
+
+    padding-left: em(50px)
+    padding-right: em(36px)
+    padding-top: em(21px)
+
+    &.active
+        display: block
+
+.categoriesNav__list
+    display: inline
+
+.categoriesNav__item
+    +inline-column
+
+    color: $color-primary
+
+    +font-direct-regular
+    $font-size: 16px
+
+    font-size: em($font-size)
+    text-transform: uppercase
+
+    margin-bottom: em(16px, $font-size)
+    margin-right: em(14px, $font-size)
+
+    &.active
+        .categoriesNav__link
+            color: #fff
+
+.categoriesNav__link
+    color: $color-primary
+
+    transition: color .3s ease
+
+    cursor: pointer
+
+    &:hover
+        color: #fff !important
+
+.a-resetCategoriesBtn
+    +reset-btn
+
+    +font-direct-regular
+
+    font-size: em(16px)
+    line-height: 34px
+
+    height: 35px
+
+    color: $color-primary-darker
+
+    box-sizing: border-box
+
+    background-color: #FFF
+
+    text-transform: uppercase
+
+    border: solid 2px transparent
+
+    padding: 0px 9px
+
+    margin-top: -4px
+
+    position: relative
+    top: -6px
+
+    +inline-box
+
+    transition: color .3s ease, background-color .3s ease, border-color .3s ease
+
+    &:hover
+        background-color: $color-primary-darker
+
+        color: #fff
+
+        border-color: #fff
+
+        .icon-close
+            color: #fff
+
+    .icon-close
+        font-size: 19px
+
+        position: relative
+        top: 2px
+
+        color: $color-primary-darker
+
+        transition: color .3s ease
+
+
+
+
+

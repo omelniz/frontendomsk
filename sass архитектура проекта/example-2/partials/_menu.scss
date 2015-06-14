@@ -1,0 +1,32 @@
+.menu {
+    padding-bottom: rem(11px);
+    border-top: solid 1px $color-border;
+    padding-top: rem(10px);
+}
+
+.menu-list {
+    display: table;
+    width: 100%;
+    @include center-block(1030px);
+}
+
+.menu-list-item {
+    display: table-cell;
+    font-size: rem(16px);
+    line-height: ratio(22px, 16px);
+    @include font-notoserif-regular;
+    text-align: center;
+
+    a {
+        @include inline-box;
+        padding: rem(10px) rem(14px) rem(12px) rem(14px);
+        border-bottom: none;
+    }
+
+    &.is-active a {
+        background-color: $color-accent;
+        background-color: rgba($color-accent, .25);
+        cursor: default;
+        text-decoration: none;
+    }
+}

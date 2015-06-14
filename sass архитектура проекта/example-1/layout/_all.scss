@@ -1,0 +1,39 @@
+#content {
+    margin-bottom: em(50px);
+}
+
+#aside {
+    width: em(210px);
+    float: left;
+}
+
+#main {
+    margin-left: em(270px);
+}
+
+.page_header {
+    padding-top: em(35px);
+    padding-bottom: em(33px);
+    margin-bottom: em(28px);
+    border-bottom: solid 1px #cdcdcd;
+    position: relative;
+}
+
+.breadcrumbs {
+    position: absolute;
+    top: em(40px);
+    right: 0px;
+}
+
+.page_header_title {
+    font-size: em(25px);
+    margin-bottom: em(15px, 25px);
+    color: #726c71;
+}
+
+@include breakpoint(phablet) {
+    .page_header_title {
+        font-size: em(17px);
+        margin-bottom: em(15px, 17px);
+    }
+}

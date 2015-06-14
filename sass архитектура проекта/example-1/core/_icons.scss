@@ -1,0 +1,60 @@
+[class^="icon-"]:before, [class*=" icon-"]:before,
+[class^="icon-"]:after, [class*=" icon-"]:after {
+	@include font-icon;
+}
+
+.icon-calendar:before {
+	content: "\e000";
+}
+.icon-triangle-up:before {
+	content: "\e001";
+}
+.icon-delivery:before {
+	content: "\e002";
+}
+.icon-facebook:before {
+	content: "\e003";
+}
+.icon-google-plus:before {
+	content: "\e004";
+}
+.icon-instagram:before {
+	content: "\e005";
+}
+.icon-location:before {
+	content: "\e006";
+}
+.icon-minus-square:before {
+	content: "\e007";
+}
+.icon-pinterest:before {
+	content: "\e008";
+}
+.icon-pinterest-square:before {
+	content: "\e009";
+}
+.icon-plus-square:before {
+	content: "\e00a";
+}
+.icon-facebook-square:before {
+	content: "\e00b";
+}
+.icon-twitter-square:before {
+	content: "\e00c";
+}
+.icon-triangle-down:before {
+	content: "\e00d";
+}
+.icon-star:before {
+	content: "\e00e";
+}
+.icon-clock:before {
+	content: "\e00f";
+}
+.icon-twitter:before {
+	content: "\e010";
+}
+.icon-user:before {
+	content: "\e011";
+}
+

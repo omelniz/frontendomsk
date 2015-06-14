@@ -1,0 +1,24 @@
+.fakton {
+	max-width: rem(148px);
+	text-align: center;
+}
+
+.fakton-number {
+	@include font-bradobrei-regular;
+	font-size: rem(89px);
+	color: $color-accent;
+	line-height: ratio(99px, 89px);
+	margin-bottom: rem(-14px);
+}
+
+.fakton-title {
+	@include font-bradobrei-regular;
+	font-size: rem(24px);
+	line-height: ratio(33px, 24px);
+	margin-bottom: rem(1px);
+}
+
+.fakton-details {
+	font-size: rem(14px);
+	line-height: ratio(20px, 14px);
+}

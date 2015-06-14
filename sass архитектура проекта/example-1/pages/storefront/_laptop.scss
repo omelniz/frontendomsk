@@ -1,0 +1,17 @@
+@include breakpoint(laptop) {
+    .tabs-nav {
+        margin-left: em(270px);
+    }
+
+    .storeDelegate {
+        margin-top: em(-73px);
+    }
+
+    #main {
+        margin-left: em(270px);
+    }
+
+    #aside {
+        display: block;
+    }
+}

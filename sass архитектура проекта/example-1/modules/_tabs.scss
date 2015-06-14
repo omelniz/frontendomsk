@@ -1,0 +1,61 @@
+.tabs-nav {
+    background: #efefef;
+
+    li {
+        float: left;
+        @include font-opensans-semibold;
+        font-size: em(24px);
+        color: #333333;
+
+        &.active {
+            background: white;
+
+            a {
+                cursor: default;
+            }
+        }
+
+        &:hover {
+            background: white;
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+        a {
+            padding: em(29px, 24px) em(39px, 24px) em(34px, 24px) em(39px, 24px);
+            display: block;
+            color: #333333;
+        }
+    }
+
+    .badge {
+        background: white;
+        font-size: em(18px, 24px);
+        color: #333333;
+        padding: em(2px, 24px) em(14px, 24px);
+        border-radius: 10px;
+    }
+}
+
+.tab-pane {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
+
+// Breakpoints
+@include breakpoint(phablet) {
+    .tabs-nav {
+        li {
+            font-size: em(16px);
+        }
+
+        a {
+            padding: em(18px, 16px) em(25px, 16px) em(22px, 16px) em(25px, 16px);
+        }
+    }
+}

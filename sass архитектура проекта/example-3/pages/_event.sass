@@ -1,0 +1,199 @@
+.page.m-event
+    .event
+        max-width: 600px
+
+        float: left
+
+        margin-right: 50px
+
+    .page__aside
+        float: left
+
+        width: 1px
+
+        padding-top: 217px
+
+        .floating__sharing
+            height: 160px
+
+        .banner
+            margin-top: 233px
+            margin-bottom: 50px
+
+
+    .page__content
+        +clearfix
+        +center-block(800px)
+
+        padding: em(40px) em(30px)
+
+        +font-pt-sans
+
+    .event__header
+        margin-bottom: em(44px)
+
+        padding-bottom: 1px
+
+        overflow: hidden
+
+    .event__title
+        span
+            margin-left: 0px !important
+
+    .event__type,
+    .event__title
+        font-size: em(50px)
+        line-height: em(55px, 50px)
+
+        display: inline
+
+    .event__type
+        color: $color-primary
+
+    .event__metadata
+        overflow: hidden
+
+        margin-top: em(40px)
+        margin-bottom: em(43px)
+
+        display: table
+
+        width: 100%
+
+    .metadata__item
+        display: table-cell
+
+        text-align: center
+
+        vertical-align: bottom
+
+        &:last-child
+            text-align: right
+
+        &:first-child
+            text-align: left
+
+    .metrics__list
+        white-space: nowrap
+
+    .metrics__item
+        margin-left: 10px
+
+        &:first-child
+            margin-left: 0px
+
+    .event__time
+        color: $color-primary
+
+        font-size: em(30px)
+
+        float: left
+
+        max-width: 410px
+
+    .event__likes
+        float: right
+
+        padding-top: 11px
+
+    .event__illustration
+        margin-top: -53px
+        position: relative
+        top: 53px
+        z-index: 1
+        img
+            max-width: 100%
+
+    .event__ticket
+        background: $color-service
+
+        height: 53px
+
+        padding: 0px 28px
+
+        border-radius: 2px
+
+        position: relative
+        z-index: 2
+
+        float: right
+
+        color: #fff
+
+        +font-direct-regular
+
+        font-size: em($font-size-small)
+
+        line-height: 54px
+
+    .participation,
+    .a-buy-ticket
+        position: relative
+        z-index: 2
+
+    .a-buy-ticket
+        $font-size: $font-size-small
+
+        .btn__icon
+            padding-left: em(7px, $font-size)
+            padding-right: em(6px, $font-size)
+
+            width: auto
+
+    .event__party
+        overflow: hidden
+
+        margin-bottom: em(50px)
+
+        &.m-organizer,
+        &.m-place
+            .party__avatar img
+                border-radius: 0px
+
+        .party__avatar
+            float: left
+
+            margin-right: em(20px)
+
+            +square(65px)
+
+            overflow: hidden
+
+            background: $color-primary
+
+            img
+                max-width: 100%
+
+        .party__desc
+            $font-size: $font-size-large
+            padding-top: em(2px, $font-size)
+
+            overflow: hidden
+
+            font-size: em($font-size)
+            line-height:  em(30px, $font-size)
+
+            color: #000
+
+        .party__type
+            +font-pt-sans-bold
+
+            display: inline
+
+            color: $color-primary
+
+        .party__name
+            display: inline
+
+            color: $color-primary
+
+    .btn.m-past
+        cursor: default
+
+        &:hover
+            background: $color-primary
+
+    &.m-past
+        .event__time
+            color: #999
+

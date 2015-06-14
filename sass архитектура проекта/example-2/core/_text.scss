@@ -1,0 +1,99 @@
+.text {
+	table {
+		@extend .table;
+	}
+	ul {
+        @extend .text-ul;
+        li {
+            margin-left: rem(-20px);
+        }
+    }
+
+    ol {
+        @extend .text-ol;
+    }
+
+    p {
+    	margin-bottom: rem(22px);
+    }
+
+    small {
+        font-size: rem(12px);
+        @include font-notosans-regular;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: rem(22px);
+    }
+
+    figure {
+        margin-bottom: rem(22px);
+
+        img {
+            margin-bottom: rem(17px);
+        }
+    }
+
+    figcaption {
+        font-size: rem(14px);
+        line-height: ratio(22px, 14px);
+        color: #111111;
+        border-top: solid 1px #DDDDDD;
+        padding-top: rem(10px);
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    h1 {
+        margin-bottom: rem(45px);
+    }
+
+    h2,
+    h2.h2 {
+    	margin-bottom: rem(9px);
+    }
+
+    h3 {
+    	margin-bottom: rem(10px);
+    }
+
+    h4 {
+
+    }
+
+    h5 {
+
+    }
+
+    h6 {
+
+    }
+
+    strong,
+    b {
+        font-weight: 700;
+    }
+
+    .persone {
+        margin-bottom: rem(66px);
+
+        .persone-name {
+            margin-bottom: 0px;
+        }
+
+        .persone-contacts {
+            li {
+                font-size: rem(14px);
+                line-height: ratio(22px, 14px);
+                margin-bottom: 0px;
+                margin-left: 0px;
+                padding-left: 0px;
+
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.footer_nav {
+    .column_title {
+        color: white;
+        text-transform: uppercase;
+        font-size: em(17px);
+        @include font-opensans-semibold;
+        margin-bottom: em(48px, 17px);
+    }
+
+    .nav_links_item {
+        font-size: em(13px);
+        color: white;
+        margin-bottom: em(20px, 13px);
+
+        a {
+            color: white;
+        }
+    }
+}
+
+.footer_nav_column {
+    @include inline-box;
+    margin-right: em(15px);
+    min-width: em(75px);
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}

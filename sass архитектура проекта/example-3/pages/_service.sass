@@ -1,0 +1,44 @@
+.servicePage
+    +center-block(em(800px))
+
+    padding-top: em(70px)
+
+.servicePage__header
+    margin-bottom: em(34px)
+
+.servicePage__header__title
+    $font-size: 50px
+
+    +font-direct-regular
+    font-size: em($font-size)
+    font-weight: bolder
+    line-height: em(60px, $font-size)
+
+    margin-bottom: em(10px, $font-size)
+
+.servicePage__content
+    +font-pt-sans
+
+    p
+        line-height: em(27px)
+
+        margin-bottom: em(26px)
+
+        &.tizer
+            font-size: em($font-size-x-large)
+            line-height: em(39px, $font-size-x-large)
+
+            margin-bottom: em(42px, $font-size-x-large)
+
+    h2
+        font-size: em($font-size-x-large)
+
+        margin-bottom: em(13px, $font-size-x-large)
+
+.servicePage__footer
+    padding-bottom: 70px
+
+    h2
+        +font-pt-sans
+        font-size: em(30px)
+        line-height: em(36px, 30px)

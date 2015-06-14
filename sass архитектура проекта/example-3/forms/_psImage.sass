@@ -1,0 +1,89 @@
+.ps-image
+	width: 150px
+	height: 150px
+
+	border: solid 2px #fff
+
+	box-sizing: border-box
+
+	position: relative
+
+	overflow: hidden
+
+	padding: 4px
+
+	img
+		width: 100%
+
+	&:hover
+		.ps-image__controls__list
+			margin-bottom: 0px
+
+	.ps-image__controls
+		position: absolute
+		bottom: 0px
+		left: 0px
+		z-index: 1
+
+		width: 100%
+
+	.ps-image__controls__list
+		margin-bottom: -95px
+
+		transition: margin .3s ease
+
+		background: #000
+		background: rgba(#000, .8)
+
+		color: #FFF
+
+		a
+			color: #FFF
+
+			padding: 7px 10px
+
+			display: block
+
+			transition: color .3s ease
+
+		li
+			transition: opacity .3s ease
+			opacity: .5
+
+
+			font-size: $font-size-small
+
+			&:hover
+				opacity: 1
+
+			&:first-child
+				a
+					padding-top: 10px
+			&:last-child
+				a
+					padding-bottom: 10px
+
+			.a-remove-file:hover
+				color: $color-error
+
+
+	.ps-image-fileinput
+		position: absolute
+		top: 100%
+
+		visibility: hidden
+
+		height: 0px
+		width: 0px
+
+		overflow: hidden
+
+#ps-images-upload-hidden-form,
+#ps-images-crop-hidden-form
+	overflow: hidden
+	visibility: hidden
+	width: 0
+	height: 0
+	position: absolute
+	top: -1px
+	left: -1px

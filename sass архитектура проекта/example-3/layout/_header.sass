@@ -1,0 +1,150 @@
+#header
+    background: $color-primary
+
+    background: rgba($color-primary, .9)
+
+    width: 100%
+    height: em(50px)
+
+    z-index: 100
+
+    position: relative
+
+    min-width: 1000px
+
+    .a-upBtn
+        position: absolute
+        left: 0px
+        top: 0px
+
+        z-index: 2
+
+        &.show
+            top: 50px
+
+        &.m-stick
+            position: fixed
+            margin-top: -50px
+
+    .flashNews
+        position: relative
+        z-index: 5
+
+    .logo,
+    .flashNews,
+    .toggle-categoriesNav,
+    .a-openSearchBtn
+        float: left
+
+    .categoriesNav,
+    .search
+        position: absolute
+        top: 100%
+        left: 0px
+        right: 0px
+
+        z-index: 4
+
+    .search
+        height: em(480px)
+
+        z-index: 6
+
+    .userbar
+        float: right
+
+    .search
+        position: fixed
+        transition: all .3s ease, opacity .3s ease .1s
+
+        top: em(-480px)
+        opacity: 0
+
+        &.m-open
+            top: 0px
+            opacity: 1
+
+    .a-openMenuBtn
+        +reset-btn
+        color: $color-primary
+        background: #FFF
+
+        width: 50px
+        height: 50px
+
+        font-size: 18px
+
+        text-align: center
+
+        display: none
+
+    .notice
+        position: absolute
+        top: 100%
+        left: em(50px)
+        z-index: 1
+
+.header__content
+    width: 100%
+
+    display: table
+
+.header__column
+    display: table-cell
+
+    text-align: center
+
+    vertical-align: top
+
+    &:first-child
+        text-align: left
+
+    &:last-child
+        text-align: right
+
+    +breakpoint(1024px - 40px)
+        .logo-text
+            &::after
+                content: "Ps"
+
+    +breakpoint(860px)
+        .a-createEventBtn
+            width: 50px
+            text-align: center
+
+            padding: 0px
+
+            .icon-write
+                margin-right: 0px
+        .createEventBtn__text
+            display: none
+
+    +breakpoint(700px)
+        .a-createEventBtn
+            display: none
+
+        .a-entryBtn
+            background: #FFF
+
+            color: $color-primary
+
+    +breakpoint(660px)
+        .a-entryBtn,
+        .mainNav,
+        .a-openSearchBtn,
+        .toggle-categoriesNav
+            display: none
+
+        .logo-text
+            &::after
+                content: "Public speech"
+
+        .a-openMenuBtn
+            display: block !important
+            float: right
+
+
+        display: table
+
+        width: 100%
+

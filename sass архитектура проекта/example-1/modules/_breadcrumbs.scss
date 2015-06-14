@@ -1,0 +1,19 @@
+.breadcrumbs {
+    li {
+        font-size: em(15px);
+        color: #726c71;
+        @include inline-block;
+
+        &::after {
+            content: " >";
+        }
+
+        &:last-child::after {
+            display: none;
+        }
+
+        a {
+            color: #726c71;
+        }
+    }
+}

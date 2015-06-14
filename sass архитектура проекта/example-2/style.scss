@@ -1,0 +1,74 @@
+// Config
+@import "config/typography";
+@import "config/grid";
+@import "config/breakpoints";
+@import "config/colors";
+@import "config/width";
+
+// Helpers
+@import "helpers/mixins";
+@import "helpers/grid";
+@import "helpers/typography";
+@import "helpers/responsive";
+
+// Plugins
+@import "plugins/fotorama";
+
+// Core
+@import "core/reset";
+@import "core/fonts";
+@import "core/headers";
+@import "core/lists";
+@import "core/links";
+@import "core/table";
+@import "core/buttons";
+@import "core/time";
+@import "core/group";
+@import "core/inputs";
+@import "core/fakton";
+@import "core/files";
+@import "core/paragraph";
+@import "core/incut";
+@import "core/text";
+@import "core/separator";
+@import "core/tabs";
+
+// Partials
+@import "partials/logo";
+@import "partials/languages";
+@import "partials/menu";
+@import "partials/fullmenu";
+@import "partials/submenu";
+@import "partials/contentmenu";
+@import "partials/subscribe";
+@import "partials/persone";
+@import "partials/pagination";
+@import "partials/priorities";
+@import "partials/map";
+@import "partials/about";
+@import "partials/newsfeed";
+@import "partials/dissertation";
+@import "partials/licenses";
+@import "partials/lecture";
+@import "partials/search";
+
+// Layout
+@import "layout/body";
+@import "layout/header";
+@import "layout/wrapper";
+@import "layout/page";
+@import "layout/footer";
+
+// Pages
+@import "pages/home";
+@import "pages/news-view";
+@import "pages/soviet/consist";
+@import "pages/soviet/about";
+@import "pages/soviet/news";
+@import "pages/soviet/contacts";
+@import "pages/soviet/activity";
+@import "pages/contacts";
+@import "pages/institute-about";
+@import "pages/institute-staff";
+@import "pages/structure";
+@import "pages/sitemap";

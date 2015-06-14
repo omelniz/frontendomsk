@@ -1,0 +1,19 @@
+.policyList {
+	color: #999;
+	padding: 0px em(16px);
+
+	h5 {
+		@include font-opensans-semibold;
+		font-size: em(30px);
+		margin-bottom: em(7px, 30px);
+	}
+
+	p {
+		font-size: em(18px);
+		line-height: em(25px, 18px);
+	}
+
+	.policy {
+		margin-bottom: em(45px);
+	}
+}

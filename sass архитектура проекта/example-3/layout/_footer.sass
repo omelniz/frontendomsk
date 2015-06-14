@@ -1,0 +1,240 @@
+#footer
+    border-top: 2px solid $color-primary
+
+    height: 126px
+
+    position: relative
+
+    margin: em(-126px) em(25px) em(0px) em(25px)
+
+    box-sizing: border-box
+
+    padding-left: em(232px)
+
+    .logo
+        position: absolute
+        top: em(0px)
+        left: em(0px)
+
+        background: $color-primary
+
+    .socialLinks
+        white-space: nowrap
+        padding-right: em(15px)
+
+        .socialLinks__item
+            +inline-column
+            $font-size: 22px
+
+            font-size: $font-size
+
+            margin-left: em(2px, $font-size)
+
+            &:first-child
+                margin-left: 0px
+
+        .socialLinks__link
+            &.icon-facebook:hover
+                color: #3B589D
+
+            &.icon-twitter:hover
+                color: #5AABF3
+
+            &.icon-vkontakte:hover
+                color: #5878A0
+
+            &.icon-round-instagram:hover
+                color: #35648c
+
+    .copyright
+        +font-direct-regular
+        $font-size: $font-size-x-small
+
+        font-size: em($font-size)
+        color: #999999
+
+        line-height: em(19px, $font-size)
+
+        width: 80%
+        float: left
+
+    .developer
+        +font-direct-regular
+        $font-size: $font-size-x-small
+
+        font-size: em($font-size)
+        color: #999999
+
+        margin-right: em(15px, $font-size)
+
+        float: right
+
+    .footer__row.m-top
+        margin-top: 6px
+        margin-bottom: 13px
+
+        display: table
+
+        width: 100%
+
+        .footer__title,
+        .footerNav,
+        .socialLinks
+            display: table-cell
+
+            vertical-align: middle
+
+        .footer__title
+            width: 300px
+
+        .socialLinks
+            text-align: right
+
+        .footerNav
+            text-align: center
+
+.footer__title
+    $font-size: 16px
+
+    +font-direct-regular
+    font-size: em($font-size)
+    line-height: 1.4
+    text-transform: uppercase
+
+    letter-spacing: em(1px)
+
+.footerNav
+    .a-toggleFooterNav
+        +reset-btn
+
+        color: $color-primary
+
+        font-size: 20px
+
+        display: none
+
+.footerNav__list
+    white-space: nowrap
+
+.footerNav__item
+    +inline-column
+    +font-direct-regular
+    $font-size: 16px
+
+    font-size: em($font-size)
+    text-transform: uppercase
+
+    margin-right: em(24px, $font-size)
+
+    letter-spacing: em(1px)
+
+    position: relative
+
+    &:last-child
+        margin-right: 0px
+
+.footerNav__link
+    color: $color-primary
+
+#footer
+    +breakpoint(1280px - 40px)
+        .footer__row.m-top
+            margin-top: 21px
+
+            .footer__title
+                display: none
+
+            .footerNav
+                text-align: left
+
+
+
+    +breakpoint(1024px - 40px)
+        height: 160px
+
+        margin-top: -160px
+
+        .footer__row.m-top
+            .footerNav
+                margin-bottom: 17px
+
+        .footer__row.m-bottom
+            .copyright,
+            .developer
+                float: none
+
+            .copyright
+                margin-bottom: 10px
+
+    +breakpoint(904px)
+        padding-left: 130px
+
+        .logo-text
+            &::after
+                content: "Ps"
+
+    +breakpoint(800px)
+        height: 210px
+
+        margin-top: -210px
+
+        .footer__row.m-top
+            .footerNav,
+            .socialLinks
+                display: block
+
+            .socialLinks
+                text-align: left
+
+                margin-bottom: 8px
+
+        .footer__row.m-bottom
+            .copyright
+                p
+                    display: inline
+
+    +breakpoint(640px)
+        padding-left: 20px
+
+        .footer__row.m-top
+            margin-top: 13px
+
+            padding-left: 100px
+
+            box-sizing: border-box
+
+            margin-bottom: 30px
+
+            .footerNav__list
+                display: none
+
+            .a-toggleFooterNav
+                display: block
+
+            .footerNav
+                width: 40px
+
+            .socialLinks
+                width: auto
+
+                text-align: right
+
+            .footerNav,
+            .socialLinks
+                display: table-cell
+
+        .copyright
+            width: 100%
+
+            padding-right: 20px
+
+            box-sizing: border-box
+
+
+
+#layout
+    +breakpoint(1024px - 40px)
+        padding-bottom: 160px
+
+    +breakpoint(800px)
+        padding-bottom: 210px

@@ -1,0 +1,83 @@
+.page {
+	background-color: $color-bg-content;
+}
+
+.page-inner {
+	@include clearfix;
+	padding-bottom: rem(130px);
+}
+
+.page-header {
+	padding-top: rem(61px);
+	margin-bottom: rem(80px);
+
+	h1 {
+		text-align: center;
+	}
+}
+
+.page--withAside {
+	.page-inner {
+		padding-top: rem(66px);
+	}
+
+	.aside {
+		@include column("3/12");
+		@include offset("1/12");
+		@include offset("-1/12");
+	}
+
+	#content {
+		@include column("6/12");
+
+		h1 {
+			margin-bottom: rem(45px);
+		}
+	}
+}
+
+.page--withThinAside {
+	.page-inner {
+		padding-top: rem(66px);
+	}
+
+	.aside {
+		@include column("1/12");
+		@include offset("1/12");
+		@include offset("-1/12");
+	}
+
+	#content {
+		@include column("6/12");
+	}
+}
+
+.page--service {
+	.page-inner {
+		padding-top: rem(133px);
+	}
+
+	.service-message {
+		@include center(500px);
+		text-align: center;
+
+		h1 {
+			margin-bottom: rem(5px);
+		}
+
+		img {
+			margin-bottom: rem(28px);
+		}
+
+		p {
+			font-size: rem(21px);
+			line-height: ratio(29px, 21px);
+			margin-bottom: rem(-10px);
+		}
+
+		a {
+			display: inline-block;
+			margin-top: rem(36px);
+		}
+	}
+}

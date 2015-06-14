@@ -1,0 +1,39 @@
+.ps-pagination
+    color: $color-primary
+
+    +font-direct-regular
+
+    li
+        $font-size: 16px
+
+        +inline-box
+
+        height: em(30px, $font-size)
+        width: em(30px, $font-size)
+
+        line-height: em(30px, $font-size)
+
+        font-size: em($font-size)
+
+        text-align: center
+
+        &.disabled
+            opacity: .25
+
+        &.active
+            color: #FFF
+
+            .current
+                background: $color-primary
+
+                display: block
+                height: 100%
+                width: 100%
+
+                &.prev,
+                &.next
+                    background: none !important
+
+                    color: $color-primary
+
+                    opacity: .5

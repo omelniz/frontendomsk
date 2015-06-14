@@ -1,0 +1,10 @@
+.page.page--soviet-news {
+	.page-inner {
+		padding-top: rem(66px);
+	}
+
+	#content {
+		@include offset("-3/12");
+		@include column("6/12");
+	}
+}

@@ -1,0 +1,48 @@
+.intro {
+    margin-bottom: em(55px);
+}
+
+.intro_content {
+    padding-top: em(80px);
+    padding-bottom: em(146px);
+}
+
+.intro_title {
+    font-size: em(47px);
+    margin-bottom: em(3px, 47px);
+}
+
+.intro_subtitle {
+    font-size: em(27px);
+    margin-bottom: em(44px, 27px);
+}
+
+.page_section_header {
+    margin-bottom: em(42px);
+}
+
+.page_section_header {
+    h2 {
+        font-size: em(47px);
+    }
+}
+
+.search {
+    width: em(511px);
+    padding: em(40px);
+}
+
+.search-form_row {
+    margin-bottom: em(25px);
+
+    label {
+        font-size: em(20px);
+        margin: 0px 0px em(5px, 20px) em(-2px, 20px);
+    }
+}
+
+.search-btn {
+    font-size: em(24px);
+    margin-top: em(2px, 24px);
+    padding: em(12px, 24px) em(10px, 24px);
+}

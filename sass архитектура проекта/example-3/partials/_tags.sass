@@ -1,0 +1,102 @@
+.tags__title
+    float: left
+
+    margin-right: em(8px)
+
+    padding-top: em(4px)
+
+.tags__list
+    overflow: hidden
+
+    padding-bottom: 1px
+
+.tags__item
+    border: solid 1px $color-primary
+
+    +inline-box
+
+    margin-right: 3px
+    margin-bottom: 3px
+
+    padding: 3px 5px
+
+    color: $color-primary
+
+    transition: border-color .3s ease, background .3s ease
+
+    a
+        color: $color-primary
+
+        transition: color .3s ease
+
+    &:hover
+        background: $color-primary
+
+        color: #FFF
+
+        a
+            color: #FFF
+
+.card
+    .tags__title
+        display: none
+
+    .tags__item
+        $font-size: $font-size-x-small
+
+        font-size: em($font-size)
+        text-transform: uppercase
+
+        margin-bottom: em(6px, $font-size)
+
+        background: #c0c0c0
+
+        border-color: #c0c0c0
+
+        color: #ffffff
+
+        padding: em(4px, $font-size)
+
+        a
+            color: #ffffff
+
+        &:hover
+            background: none
+
+            color: #C0C0C0
+
+            a
+                color: #C0C0C0
+
+    &.article
+        .tags__item
+            color: #969696
+
+            background: #fff
+
+            border-color: #fff
+
+            a
+                color: #969696
+
+            &:hover
+                color: #969696
+
+                background: none
+
+                border-color: #969696
+
+                a
+                    color: #969696
+
+        &.m-background
+            .tags__item
+                &:hover
+                    background: none
+
+                    border-color: #fff
+
+                    color: #fff
+
+                    a
+                        color: #fff

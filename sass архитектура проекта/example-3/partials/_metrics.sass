@@ -1,0 +1,34 @@
+.metrics
+    $font-size: $font-size-regular
+
+    font-size: $font-size
+
+    color: $color-primary
+
+    +font-pt-sans
+
+    .metrics__counter,
+    .icon-comment,
+    .icon-heart,
+    .icon-runningman,
+    .icon-eye
+        display: inline-block
+        vertical-align: middle
+
+.metrics__item
+    +inline-column
+    vertical-align: middle
+
+.metrics__link
+    color: $color-primary
+
+.a-like
+    font-size: $font-size-regular
+
+    +reset-btn
+
+    +font-pt-sans
+
+    &.liked
+        .icon-heart::before
+            content: "\e61a"

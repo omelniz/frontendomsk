@@ -1,0 +1,3 @@
+// @for $i from 1 through 12 {
+//   .column-#{$i} {@include column("#{$i}/12");}
+// }

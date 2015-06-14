@@ -1,0 +1,30 @@
+.a-upBtn
+    height: 50px
+    width: 50px
+
+    background: $color-primary
+    background: rgba($color-primary, .9)
+
+    color: #FFF
+
+    text-align: center
+    line-height: 50px
+
+    top: 0
+
+    transition: background .3s ease, color .3s ease, top .6s ease
+
+    &:hover
+        background: rgba($color-service, .9)
+
+        color: #FFF
+
+    &.m-invert
+        background: #FFF
+        color: $color-primary
+
+    &.m-stick
+        position: fixed
+
+        &:hover
+            color: $color-service

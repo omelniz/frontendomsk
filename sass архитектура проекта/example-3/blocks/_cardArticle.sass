@@ -1,0 +1,345 @@
+.card.article
+    +font-scada-regular
+
+    width: em(300px)
+
+    box-sizing: border-box
+
+    position: relative
+
+    overflow: hidden
+
+    &.m-without-cover
+        .metrics
+            position: static
+
+            padding-top: 44px
+            padding-bottom: 14px
+
+        .card__header
+            &::after
+                display: none
+
+    &:hover
+        .article__illustration__img
+            transform: scale(1.2)
+            -webkit-transform: scale(1.2)
+
+        .metrics,
+        .card__header::after
+            opacity: 1
+
+    .card__header
+        margin-bottom: em(12px)
+
+        position: relative
+
+        &::after
+            content: ""
+
+            display: block
+
+            position: absolute
+            top: 0
+            left: 0
+
+            width: 100%
+            height: 100%
+
+            background: rgba(#000, .4)
+            background: linear-gradient(-180deg, rgba(0,0,0,0.70) 0%, rgba(0,0,0,0.20) 100%)
+
+            opacity: 0
+
+            transition: opacity .3s ease
+
+    .metrics
+        opacity: 0
+
+        transition: opacity .3s ease
+
+        position: absolute
+        z-index: 1
+        left: 0px
+        top: 0px
+
+        width: 100%
+        height: 100%
+
+        color: #FFF
+
+        font-size: 16px
+
+        box-sizing: border-box
+
+        text-align: center
+
+        .a-like
+            font-size: 16px
+            color: #FFF
+
+        &::after
+            content: ""
+
+            height: 100%
+
+            display: inline-block
+            vertical-align: middle
+
+    .metrics__list
+        display: inline-block
+        vertical-align: middle
+
+    .metrics__item
+        margin-left: 7px
+
+        &:first-child
+            margin-left: 0px
+
+            opacity: .7
+
+        i
+            font-size: 18px
+
+        .icon-comment
+            font-size: 16px
+
+    .metrics__link
+        color: #FFF
+
+        opacity: .7
+
+        transition: opacity .3s ease
+
+        &:hover
+            opacity: 1
+
+    .article__illustration
+        overflow: hidden
+
+        border: solid 1px #eee
+
+    .article__illustration__img
+        width: 100%
+
+        display: block
+
+        transition: all .3s ease
+
+        padding-top: 66%
+
+        background-size:  cover
+        background-position: center center
+
+    .article__type
+        $font-size: $font-size-regular
+
+        font-size: em($font-size)
+        text-transform: uppercase
+
+        position: absolute
+        top: em(-2px, $font-size)
+        right: em(0px, $font-size)
+
+        color: $color-accent
+        background: #fff
+
+        max-width: 80%
+
+        padding: 0px 0px em(4px, $font-size) em(10px, $font-size)
+
+        z-index: 1
+
+    .article__date
+        $font-size: 15px
+
+        color: #444
+
+        display: block
+
+        font-size: em($font-size)
+
+        margin-bottom: em(12px, $font-size)
+
+    .author
+        overflow: hidden
+
+        margin-bottom: em(9px)
+
+    .author__photo
+        float: left
+
+        margin-right: em(4px)
+
+        +square(15px)
+
+        overflow: hidden
+
+        background: $color-primary
+
+    .author__photo__img
+        max-width: 100%
+
+    .author__name
+        $font-size: $font-size-small
+
+        color: #969696
+        overflow: hidden
+
+        font-size: em($font-size)
+
+        margin-top: em(1px, $font-size)
+
+    .author__link
+        color: #969696
+
+        transition: color .3s ease
+
+        &:hover
+            color: $color-service
+
+    .article__title
+        $font-size: 19px
+
+        font-size: em($font-size)
+        line-height: em(22px, $font-size)
+
+        margin-bottom: em(7px, $font-size)
+
+        a
+            color: #000
+
+            transition: color .3s ease
+
+            &:hover
+                color: $color-service
+
+    .tags
+        margin-bottom: em(-6px)
+
+    .tags__list
+        +fade-out-line
+
+    &.m-background
+        border: solid 2px $color-accent
+
+        padding: em(10px)
+
+        background: $color-accent
+
+        &:hover
+            border-color: $color-service
+
+            background: #fff
+
+            .author__name
+                color: black
+
+                a
+                    color: black
+
+                    &:hover
+                        transition: color .3s ease
+
+                        color: $color-service
+
+            .article__type
+                background: #fff
+
+                color: $color-service
+
+            .tags__list
+                +fade-out-line(#fff)
+
+            .tags__item
+                background: #c0c0c0
+
+                border-color: #c0c0c0
+
+                color: #ffffff
+
+                a
+                    color: #ffffff
+
+                &:hover
+                    background: none
+
+                    color: #C0C0C0
+
+                    a
+                        color: #C0C0C0
+
+        .author__photo
+            background: $color-accent
+
+        .article__illustration
+            border: none
+
+        .tags__list
+            +fade-out-line($color-accent)
+
+        .author__name
+            color: #fff
+
+            a
+                color: #fff
+
+                &:hover
+                    color: $color-service
+
+        .article__type
+            $font-size: $font-size-regular
+
+            color: #fff
+            background: $color-accent
+
+        .categories__item
+            background: #fff
+
+            color: #969696
+
+    &.m-doubleSize
+        width: em(592px)
+
+    &.m-mainArticle
+        .content
+            position: absolute
+            bottom: 0px
+            left: 0px
+            z-index: 2
+            width: 100%
+            box-sizing: border-box
+
+            padding: em(16px) em(13px) em(10px) em(13px)
+
+            background: $color-accent
+
+        .article__title
+            font-size: em(30px)
+
+            line-height: 1
+
+            margin-bottom: 0px
+
+            color: #FFF
+
+            a
+                color: #FFF
+
+                transition: color .3s ease
+
+                &:hover
+                    color: $color-service
+
+        .author
+            margin-bottom: em(12px)
+            margin-left: em(3px)
+
+        .author__name
+            color: #000
+
+            a
+                color: #000
+
+                &:hover
+                    color: $color-service

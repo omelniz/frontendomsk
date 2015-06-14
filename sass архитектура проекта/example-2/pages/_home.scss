@@ -1,0 +1,34 @@
+.page.page--home {
+
+	.fotorama {
+		margin-bottom: rem(87px);
+	}
+
+	.news-section {
+		@include clearfix;
+		margin-bottom: rem(87px);
+	}
+
+	.news {
+		@include column("3/12");
+
+		&.news--main {
+			@include column("4/12");
+			@include offset("-1/12");
+		}
+	}
+
+	.priorities {
+		margin-bottom: rem(87px);
+	}
+
+	.persones-list {
+		margin-bottom: rem(87px);
+		@include clearfix;
+
+		.persone {
+			@include waffle("1/3");
+
+		}
+	}
+}

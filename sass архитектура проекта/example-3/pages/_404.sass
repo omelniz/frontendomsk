@@ -1,0 +1,33 @@
+.page.m-404
+
+	.page__image
+		text-align: center
+
+		margin-bottom: em(50px)
+
+		img
+			max-width: 100%
+
+	.page__content
+		margin: em(50px)
+
+		p
+			$font-size: $font-size-large
+			+font-direct-regular
+
+			font-size: em($font-size)
+			line-height: em(28px, $font-size)
+
+			color: #999
+
+			a
+				color: $color-primary
+
+	.page__title
+		+font-direct-regular
+
+		font-size: em(56px)
+
+		color: $color-primary
+
+		margin-bottom: em(20px, 56px)

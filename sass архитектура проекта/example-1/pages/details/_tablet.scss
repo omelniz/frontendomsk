@@ -1,0 +1,9 @@
+@include breakpoint(tablet) {
+	.details_photo {
+    	width: calc-percent(654px, 1124px);
+	}
+
+	.details_info {
+    	width: calc-percent(442px, 1124px);
+   	}
+}

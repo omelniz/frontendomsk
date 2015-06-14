@@ -1,0 +1,41 @@
+.popover
+	position: relative
+
+	background: #FFF
+
+	border: solid 2px $color-primary
+
+	border-radius: 18px
+
+	padding: 15px 20px
+
+	text-transform: none
+
+	display: none
+
+	&::before,
+	&::after
+		content: ""
+
+		display: block
+
+		width: 0
+		height: 0
+
+		position: absolute
+		top: 100%
+		left: 50%
+
+		border-style: solid
+
+	&::before
+		border-width: 20px 24px 0 24px
+		border-color: $color-primary transparent transparent transparent
+
+		margin-left: -24px
+
+	&::after
+		border-width: 17px 20px 0 20px
+		border-color: #ffffff transparent transparent transparent
+
+		margin-left: -20px

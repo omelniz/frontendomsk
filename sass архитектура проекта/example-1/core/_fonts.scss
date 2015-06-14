@@ -1,0 +1,45 @@
+$font-path-base: "../../fonts/";
+
+// Icons (begin)
+@include add-custom-font("Icons", $font-path-base + "icons/", "flaticon");
+
+@mixin font-icon {
+	font-family: 'Icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+// Icons (end)
+
+// OpenSans (begin)
+$font-path-opensans: $font-path-base + "opensans/";
+
+@include add-custom-font("OpenSans-Regular",  $font-path-opensans + "regular/",  "openSans-regular");
+@include add-custom-font("OpenSans-Bold",     $font-path-opensans + "bold/",     "openSans-bold");
+@include add-custom-font("OpenSans-Semibold", $font-path-opensans + "semibold/", "openSans-semibold");
+@include add-custom-font("OpenSans-Light",    $font-path-opensans + "light/",    "openSans-light");
+
+@mixin font-opensans-regular {
+	font-family: "OpenSans-Regular", Arial, sans-serif;
+	font-weight: normal;
+}
+
+@mixin font-opensans-bold {
+	font-family: "OpenSans-Bold", Arial, sans-serif;
+	font-weight: normal;
+}
+
+@mixin font-opensans-semibold {
+	font-family: "OpenSans-Semibold", Arial, sans-serif;
+	font-weight: normal;
+}
+
+@mixin font-opensans-light {
+	font-family: "OpenSans-Light", Arial, sans-serif;
+}
+// OpenSans (end)

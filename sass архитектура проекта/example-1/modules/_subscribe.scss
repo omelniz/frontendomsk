@@ -1,0 +1,53 @@
+.subscribeForm_submit,
+.subscribe_title,
+.subscribe_text {
+    color: white;
+}
+
+.subscribe_title {
+    font-size: em(33px);
+    margin-bottom: em(11px, 33px);
+}
+
+.subscribe_text {
+    font-size: em(12px);
+    line-height: em(14px, 12px);
+    margin-bottom: em(17px, 12px);
+}
+
+.subscribeForm {
+    position: relative;
+    max-width: em(254px);
+}
+
+.subscribeForm_submit {
+    @include font-opensans-semibold;
+    font-size: em(14px);
+    position: absolute;
+    top: em(6px, 14px);
+    right: em(6px, 14px);
+    @include reset-btn;
+    border-radius: 4px;
+    background: #96c200;
+    height: em(30px, 14px);
+    padding: 0px em(20px, 14px);
+    box-sizing: border-box;
+
+    &:hover {
+        color: #96c200;
+        background: #fff;
+        border: solid 1px #96c200;
+    }
+}
+
+.subscribeForm_email {
+    border: solid 1px #515656;
+    border-radius: 4px;
+    background: white;
+    font-size: em(19px);
+    height: em(41px, 19px);
+    box-sizing: border-box;
+    width: 100%;
+    padding-right: em(87px, 19px);
+    padding-left: em(7px, 19px);
+}

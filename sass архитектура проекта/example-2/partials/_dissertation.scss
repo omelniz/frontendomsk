@@ -1,0 +1,28 @@
+.dissertation-date {
+	display: block;
+	margin-bottom: rem(11px);
+}
+
+.dissertation-pretitle {
+	margin-bottom: rem(6px);
+}
+
+.dissertation-author {
+	font-style: italic;
+}
+
+.dissertation-title {
+	font-size: rem(21px);
+	line-height: ratio(29px, 21px);
+	margin-bottom: rem(22px);
+}
+
+.dissertation-assignment {
+	margin-bottom: rem(31px);
+}
+
+.dissertation-list {
+	.dissertation {
+		margin-bottom: rem(66px);
+	}
+}

@@ -1,0 +1,50 @@
+.fullmenu {
+	width: rem(430px);
+	max-width: 100%;
+	padding-left: rem(130px);
+	padding-top: rem(86px);
+	box-sizing: border-box;
+
+	position: fixed;
+	top: 0px;
+	left: rem(-430px);
+	bottom: 0px;
+	z-index: 2;
+
+	background-color: #F3DD96;
+
+	transition: left .3s ease;
+
+	&.in {
+		left: 0px;
+	}
+}
+
+.fullmenumenu-list {
+	font-size: rem(18px);
+	line-height: ratio(24px, 18px);
+	color: #111111;
+	max-width: 172px;
+}
+
+.fullmenu-list-item {
+	margin-bottom: rem(13px);
+}
+
+.fullmenu-header {
+	margin-bottom: rem(75px);
+
+	.closeBtn {
+		margin-right: rem(13px);
+	}
+
+	.closeBtn,
+	.fullmenu-title {
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+.fullmenu-title {
+	line-height: 28px;
+}

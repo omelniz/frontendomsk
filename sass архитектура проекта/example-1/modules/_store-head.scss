@@ -1,0 +1,171 @@
+.store.head {
+    .store_content {
+        padding: em(21px) em(21px) em(19px);
+        text-align: center;
+        position: relative;
+    }
+
+    .store_logo,
+    .store_info {
+        position: relative;
+        z-index: 1;
+    }
+
+    .store_info {
+        .yelpRating {
+            margin-bottom: em(9px);
+
+            img {
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: em(17px);
+                width: em(170px);
+            }
+
+            p {
+                display: inline-block;
+                vertical-align: middle;
+                color: #fff;
+                font-size: em(17px);
+            }
+        }
+    }
+
+    .store_logo {
+        background: white;
+        width: em(112px);
+        padding: em(5px);
+        box-sizing: border-box;
+        border-radius: 2px;
+        display: inline-block;
+        margin-bottom: em(6px);
+        img {
+            width: 100%;
+        }
+    }
+
+    .socialLinks {
+        display: none;
+    }
+
+    .store_name {
+        @include font-opensans-light;
+        font-size: em(89px);
+        margin-bottom: em(5px, 89px);
+    }
+
+    .store_location {
+        font-size: em(24px);
+        line-height: em(29px, 24px);
+        max-width: em(425px, 24px);
+        display: inline-block;
+    }
+
+    .store_cover {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+
+        &::after {
+            content: "";
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 42%, rgba(0, 0, 0, 0.69) 100%);
+            display: block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        .store_logo {
+            img {
+                border: solid 1px #999999;
+            }
+        }
+
+        .store_name,
+        .store_location {
+            color: white;
+        }
+    }
+}
+
+// Breakpoints
+.store.head {
+    @include breakpoint(phablet) {
+        .store_logo,
+        .store_info {
+            display: inline-block;
+            vertical-align: bottom;
+        }
+
+        .socialLinks__item {
+            display: inline-block;
+            vertical-align: top;
+            font-size: em(34px);
+            margin-left: em(5px, 34px);
+
+            a {
+                color: #FFF;
+            }
+        }
+
+        .store_content {
+            padding: em(182px) em(34px) em(16px) em(34px);
+            text-align: left;
+
+            &::after {
+                content: "";
+                height: 100%;
+                display: inline-block;
+                vertical-align: bottom;
+            }
+        }
+
+        .store_info {
+            .yelpRating {
+                display: none;
+            }
+        }
+
+        .store_logo {
+            width: em(235px);
+            padding: em(10px);
+            border-radius: 4px;
+            margin-bottom: 0px;
+            margin-right: em(32px);
+        }
+
+        .store_name {
+            font-size: em(64px);
+            margin-bottom: em(8px, 64px);
+        }
+
+        .store_location {
+            font-size: em(16px);
+            line-height: em(19px, 16px);
+            max-width: em(314px, 16px);
+        }
+    }
+
+    @include breakpoint(tablet) {
+        .socialLinks {
+            position: absolute;
+            bottom: em(33px);
+            right: em(34px);
+            z-index: 1;
+            display: block;
+        }
+    }
+
+    @include breakpoint(desktop) {
+        .socialLinks {
+            right: em(64px);
+        }
+
+        .store_content {
+            padding: em(182px) em(64px) em(16px) em(64px);
+        }
+    }
+}

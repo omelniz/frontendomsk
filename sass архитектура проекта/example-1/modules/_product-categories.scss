@@ -1,0 +1,43 @@
+.product-categories {
+	white-space: nowrap;
+
+	li {
+		display: inline-block;
+		@include font-opensans-semibold;
+
+		margin-right: em(3px);
+
+		a {
+			font-size: em(27px);
+			color: #666;
+			display: block;
+			background: #EFEFEF;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			padding: em(14px, 27px) em(30px, 27px) em(16px, 27px) em(30px, 27px);
+			box-sizing: border-box;
+			box-shadow: inset 0px 1px 1px 0px rgba(255,255,255,.7);
+
+			&:hover {
+				text-decoration: none;
+				color: #fff;
+				background: #ccc;
+				box-shadow: none;
+			}
+		}
+
+		&.active {
+			a {
+				background: #4ac1c7;
+				color: #fff;
+				box-shadow: inset 0px 1px 1px 0px rgba(64,166,171,.7);
+				border-color: #36a0a5;
+				cursor: default;
+
+				&:hover {
+					background: #4ac1c7;
+				}
+			}
+		}
+	}
+}

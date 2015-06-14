@@ -1,0 +1,25 @@
+.contentmenu {
+    background-color: $color-accent;
+    background-color: rgba($color-accent, .5);
+    margin-left: rem(-21px);
+    padding-top: rem(16px);
+    padding-bottom: rem(25px);
+}
+
+.contentmenu-list-item {
+    padding: rem(3px) rem(21px);
+    font-size: rem(16px);
+    line-height: ratio(22px);
+    margin-bottom: rem(8px);
+
+    &.is-active {
+        border-left: solid rem(6px) $color-accent;
+        padding-left: rem(21px - 6px);
+        font-weight: 700;
+
+        a {
+            border: none;
+            cursor: default;
+        }
+    }
+}

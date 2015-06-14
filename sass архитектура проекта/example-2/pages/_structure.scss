@@ -1,0 +1,26 @@
+.page.page--structure {
+	.persones-list,
+	.group.group--persone {
+		@include center(980px);
+	}
+
+	.persones-list {
+		@include clearfix;
+
+		.persone {
+			@include waffle('1/2', 65px);
+		}
+	}
+
+	.group.group--persone {
+		margin-bottom: rem(65px);
+
+		.group-content {
+			@include clearfix;
+		}
+
+		.group-item {
+			@include waffle('1/2');
+		}
+	}
+}

@@ -1,0 +1,15 @@
+.btn-success {
+    @include font-opensans-bold;
+    font-size: em(24px);
+    text-transform: uppercase;
+    color: white;
+    background: #00b551;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: solid 1px #00b551;
+
+    &:hover {
+    	color: #00b551;
+    	background: #fff;
+    }
+}

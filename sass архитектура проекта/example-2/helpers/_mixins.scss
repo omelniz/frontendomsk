@@ -1,0 +1,135 @@
+@mixin center-block($width: $base-width) {
+    margin: 0 auto;
+    max-width: $width;
+}
+
+@mixin reset-btn {
+    border: none;
+    background: none;
+    outline: none;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin square($size) {
+    @include size($size, $size);
+}
+
+@mixin text-and-link-color($color) {
+    color: $color;
+
+    a {
+        color: $color;
+    }
+}
+
+@mixin reset-text-input {
+    border: none;
+    outline: none;
+    background: none;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin underline-rgba($color: $color-underline) {
+    text-decoration: none;
+    border-bottom: 1px solid $color;
+    border-color: rgba($color, .25);
+    display: inline;
+    transition: border-color .3s ease;
+
+    &:hover {
+        border-color: rgba($color, 1);
+    }
+}
+
+@mixin inline-box($width: false, $align: top) {
+    display: inline-block;
+    vertical-align: $align;
+    @if $width != false {
+        width: $width;
+    }
+}
+
+@function calc-percent($target, $context: $base-width) {
+    @if $target == 0 {
+        @return 0
+    }
+    @return $target / $context * 100%;
+}
+
+@mixin fade-out-line($color: #fff) {
+  overflow: hidden;
+  white-space: nowrap;
+
+  position: relative;
+
+  &::after {
+      content: "";
+      display: block;
+
+      width: 18px;
+
+      background-image: linear-gradient(90deg, rgba($color, 0) 0%, $color 100%);
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+  }
+}
+
+@mixin placeholder-color($color, $color-callback: false) {
+    &.placeholder {
+        @if $color-callback != false {
+            color: $color-callback;
+        }
+        color: $color;
+    }
+    &:-ms-input-placeholder {
+        @if $color-callback != false {
+            color: $color-callback;
+        }
+        color: $color;
+    }
+    &:-moz-placeholder {
+        @if $color-callback != false {
+            color: $color-callback;
+        }
+        color: $color;
+    }
+    &::-moz-placeholder {
+        @if $color-callback != false {
+            color: $color-callback;
+        }
+        color: $color;
+    }
+    &:-webkit-input-placeholder {
+        @if $color-callback != false {
+            color: $color-callback;
+        }
+        color: $color;
+    }
+    &::-webkit-input-placeholder {
+        @if $color-callback != false {
+            color: $color-callback;
+        }
+        color: $color;
+    }
+}

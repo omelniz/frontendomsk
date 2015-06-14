@@ -1,0 +1,56 @@
+.socialLogin
+    border: solid 2px #fff
+
+    height: em(50px)
+
+    box-sizing: border-box
+
+    padding-left: 15px
+    padding-right: 4px
+
+    overflow: hidden
+
+    margin-bottom: 29px
+
+.socialLogin__title
+    color: #FFF
+
+    line-height: em(46px)
+
+.choiceSocialLogin
+    float: right
+
+    padding-top: em(4px)
+
+    li
+        +square(38px)
+        overflow: hidden
+
+        float: left
+
+        transition: background-color .3s ease
+
+        margin-left: em(4px, 38px)
+
+        &:hover
+            background-color: #FFF
+
+    .link-facebook,
+    .link-twitter,
+    .link-vkontakte
+        font-size: em(38px)
+
+        color: #FFF
+
+        opacity: 1 !important
+
+        transition: color .3s ease
+
+    .link-facebook:hover
+        color: #3B589D
+
+    .link-twitter:hover
+        color: #5AABF3
+
+    .link-vkontakte:hover
+        color: #5878A0

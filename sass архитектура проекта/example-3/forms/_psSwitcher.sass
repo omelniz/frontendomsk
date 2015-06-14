@@ -1,0 +1,66 @@
+.ps-switcher-button
+    border: solid 2px #fff
+
+    width: em(96px)
+    height: em(46px)
+
+    +inline-box
+    vertical-align: middle
+
+    margin: 0px 14px
+
+    border-radius: 50px
+
+    position: relative
+
+    cursor: pointer
+
+    &::after
+        content: ""
+
+        position: absolute
+        top: 4px
+        left: 46px
+
+        width: em(38px)
+        height: em(38px)
+
+        border-radius: 50%
+
+        background: #FFF
+
+        display: block
+
+        margin-left: -42px
+
+        transition: left .3s ease
+
+    &.checked
+        &::after
+
+            left: 100%
+
+.ps-switcher-label
+    text-transform: uppercase
+
+    font-size: $font-size-large
+
+    color: #FFF
+
+    cursor: pointer
+
+    +inline-box
+    vertical-align: middle
+
+    +font-pt-sans-bold
+
+    opacity: .5
+
+    transition: opacity .3s ease
+
+    &.active,
+    &:hover
+        opacity: 1
+
+    &.active
+        cursor: default

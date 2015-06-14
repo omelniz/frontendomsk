@@ -1,0 +1,139 @@
+.ps-person-tags
+	+font-pt-sans
+
+	&.selectize-control.multi
+		box-sizing: border-box
+
+		height: em(50px)
+
+		.selectize-input
+			height: 100%
+
+			background: transparent
+
+			box-sizing: border-box
+
+			border: solid 2px #fff
+
+			padding: 3px !important
+
+			border-radius: 0px !important
+
+			&.has-items
+				& > input
+					margin: 0 2px 0 0px !important
+
+			.item
+				padding: 0px !important
+
+				margin: 0px 3px 0px 0px
+
+				position: relative
+
+				img
+					display: block
+
+				.icon-close
+					position: absolute
+					top: 0
+					left: 0
+
+					height: 100%
+					width: 100%
+
+					font-size: $font-size-regular
+					line-height: 40px
+
+					text-align: center
+
+					color: #FFF
+
+					border: none
+
+					display: none
+
+					padding: 0px !important
+
+				&:hover
+					.icon-close
+						display: block
+
+
+			& > input
+				vertical-align: top
+
+				display: inline-block
+
+				height: 100%
+
+				+placeholder-color(#b7e2d5)
+
+				font-size: $font-size-regular
+
+				color: #FFF
+
+				margin: 4px 2px 0 8px !important
+
+	.selectize-dropdown
+		background: #fff
+
+		border: none
+
+		border-radius: 0px !important
+
+		outline: solid 1px #4BB795
+
+		&::after
+			content: ""
+
+			border-top: 1px solid #fff
+
+			display: block
+
+			position: absolute
+
+			top: -1px
+
+			width: 100%
+
+		.selectize-dropdown-content
+
+			.item
+				overflow: hidden
+
+				height: 46px
+
+				padding: 3px 0px 0px 5px
+
+				box-sizing: border-box
+
+				.photo
+					float: left
+
+					margin-right: 9px
+
+				.info
+					overflow: hidden
+
+					border-bottom: solid 1px #d2ede4
+
+					height: 100%
+
+					font-size: $font-size-regular
+					line-height: 40px
+
+					color: #4BB795
+
+					box-sizing: border-box
+
+				&:last-child
+					.info
+						border-bottom: none
+
+			.create
+				font-size: $font-size-regular
+				line-height: 46px
+
+				height: 46px
+
+				color: #4BB795

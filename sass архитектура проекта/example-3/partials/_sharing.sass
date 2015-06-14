@@ -1,0 +1,82 @@
+.social-likes
+    color: $color-primary
+
+    white-space: nowrap
+
+    .social-likes__widget
+        +inline-box
+
+        width: 38px
+
+        text-align: center
+
+        margin-left: em(15px)
+
+        cursor: pointer
+
+        &:first-child
+            margin-left: 0px
+
+        &:hover
+            .social-likes__counter
+                border-color: $color-service
+
+                color: $color-service
+
+            .social-likes__icon
+                color: $color-service
+
+
+    .social-likes__icon
+        +font-icon
+        font-size: em(38px)
+
+        display: block
+
+        transition: color .3s ease
+
+    .social-likes__icon_facebook::before
+        content: "\e615"
+
+    .social-likes__icon_twitter::before
+        content: "\e614"
+
+    .social-likes__icon_vkontakte::before
+        content: "\e613"
+
+    .social-likes__counter
+        $font-size: $font-size-small
+        +font-scada-regular
+
+        font-size: em($font-size)
+
+        height: em(36px, $font-size)
+        line-height: em(40px, $font-size)
+
+        border: solid 1px $color-primary
+
+        display: block
+
+        margin-top: -1px
+
+        text-align: center
+
+        transition: color .3s ease, border-color .3s ease
+
+    .social-likes__counter_empty::before
+        content: "0"
+
+.floating__sharing
+    max-width: em(154px)
+
+.floating__sharing__title
+    $font-size: $font-size-small
+
+    width: 154px
+
+    font-size: em($font-size)
+    line-height: em(18px, $font-size)
+
+    color: $color-primary
+
+    margin-bottom: em(24px, $font-size)

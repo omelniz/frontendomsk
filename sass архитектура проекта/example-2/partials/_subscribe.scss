@@ -1,0 +1,52 @@
+.subscribe {
+	background-color: $color-info;
+	padding: rem(49px) rem(35px) rem(56px) rem(35px);
+
+	.form-row {
+		margin-bottom: rem(27px);
+	}
+
+	.form-submit {
+		text-align: center;
+		padding-top: rem(18px);
+	}
+}
+
+.subscribe-title {
+	color: #FFF;
+	line-height: rem(28px);
+	margin-bottom: rem(30px);
+	text-align: center;
+}
+
+@include respond-to(tablet) {
+	.subscribe {
+		padding: rem(46px) 0px rem(51px) 0px;
+
+		.form {
+			@include clearfix;
+		}
+
+		.form-row {
+			@include column('3/12');
+			padding-top: rem(18px);
+			margin-bottom: 0px;
+		}
+
+		.form-submit {
+			padding-top: rem(10px);
+			text-align: left;
+		}
+
+		.input-text {
+			margin-right: 10.7%;
+		}
+	}
+
+	.subscribe-title {
+		text-align: left;
+		@include column('2/12');
+		@include offset('-1/12');
+		margin-bottom: 0px;
+	}
+}

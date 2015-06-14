@@ -1,0 +1,55 @@
+.text-control {
+    @include font-opensans-bold;
+    background: white;
+
+    &.m-with-icon {
+        position: relative;
+
+        &::before {
+            font-size: em(38px);
+            color: #cccccc;
+            position: absolute;
+            top: em(24px, 38px);
+            left: em(12px, 38px);
+        }
+
+        input {
+            padding-left: em(76px, 28px);
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    input {
+        @include reset-text-input;
+        background: none;
+        font-family: inherit;
+        font-size: em(28px);
+        @include photoshop-inner-shadow(90, 3px, 0, 6px, rgba(black, 0.1));
+        color: #cccccc;
+        width: 100%;
+        border: 1px solid #aaaaaa;
+        border-radius: 4px;
+        padding: em(19px, 28px) em(10px, 28px) em(23px, 28px) em(23px, 28px);
+    }
+}
+
+@include breakpoint(phablet) {
+    .text-control {
+        &.m-with-icon {
+            &::before {
+                font-size: 28px;
+                top: 15px;
+                left: 8px;
+            }
+
+            input {
+                padding-left: em(50px, 20px);
+            }
+        }
+        input {
+            font-size: em(20px);
+            padding: em(14px, 20px) em(10px, 20px) em(17px, 20px) em(10px, 20px);
+        }
+    }
+}
